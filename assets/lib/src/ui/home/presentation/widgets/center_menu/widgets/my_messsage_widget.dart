@@ -1,8 +1,8 @@
+import 'package:costartravel/src/ui/resources/chat_colors.dart';
 import 'package:costartravel/src/ui/support/enums.dart';
 import 'package:costartravel/src/ui/support/responsive_utils/responsive_padding_utils.dart';
 import 'package:costartravel/src/ui/support/responsive_utils/responsive_text_utils.dart';
 import 'package:flutter/material.dart';
-import 'package:costartravel/src/ui/resources/chat_colors.dart';
 
 class MyMessageWidget extends StatelessWidget {
   final String message;
@@ -33,8 +33,12 @@ class MyMessageWidget extends StatelessWidget {
         child: Text(
           message,
           style: TextStyle(
-              fontSize: ResponsiveTextUtils.getResponsiveTextSize(context,
-                  mobileFontSize: 15, desktopFontSize: 15, ),
+              fontSize: ResponsiveTextUtils.getResponsiveTextSize(
+                context,
+                mobileFontSize: 15,
+                desktopFontSize: 15,
+                tabletFontSize: 18,
+              ),
               color: ChatColors.kChatFontPrimaryColor,
               fontFamily: FontFamily.primaryFont,
               fontWeight: FontWeight.w400),

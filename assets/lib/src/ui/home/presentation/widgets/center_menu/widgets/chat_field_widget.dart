@@ -1,14 +1,14 @@
+import 'package:costartravel/src/support/enums.dart';
+import 'package:costartravel/src/ui/chat/bloc/chat_bloc.dart';
+import 'package:costartravel/src/ui/chat/bloc/events/chat_event.dart';
+import 'package:costartravel/src/ui/resources/chat_colors.dart';
 import 'package:costartravel/src/ui/support/connectivitiy_service/connectivity_service.dart';
 import 'package:costartravel/src/ui/support/enums.dart';
 import 'package:costartravel/src/ui/support/responsive_utils/responsive_padding_utils.dart';
 import 'package:costartravel/src/ui/support/responsive_utils/responsive_size_utils.dart';
 import 'package:costartravel/src/ui/support/responsive_utils/responsive_text_utils.dart';
-import 'package:flutter/material.dart';
-import 'package:costartravel/src/support/enums.dart';
-import 'package:costartravel/src/ui/resources/chat_colors.dart';
-import 'package:costartravel/src/ui/chat/bloc/chat_bloc.dart';
-import 'package:costartravel/src/ui/chat/bloc/events/chat_event.dart';
 import 'package:costartravel/src/ui/support/widgets/custom_message.dart';
+import 'package:flutter/material.dart';
 
 class ChatFieldWidget extends StatefulWidget {
   final ChatBloc chatBloc;
@@ -16,14 +16,16 @@ class ChatFieldWidget extends StatefulWidget {
   final Function({bool performForceScroll, bool performScrollForImage})
       scrollListToEnd;
   final Function(bool isSet) setFocusStatus;
+  final bool animateOnInit; // New parameter
 
   const ChatFieldWidget({
-    super.key,
+    Key? key,
     required this.chatBloc,
     required this.typingAnimationFunction,
     required this.scrollListToEnd,
     required this.setFocusStatus,
-  });
+    this.animateOnInit = true,
+  }) : super(key: key);
 
   @override
   _ChatFieldWidgetState createState() => _ChatFieldWidgetState();
@@ -44,10 +46,9 @@ class _ChatFieldWidgetState extends State<ChatFieldWidget>
   void initState() {
     super.initState();
 
-    // Initialize the animation controller and animation
     _animationController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 2), // Animation duration
+      duration: const Duration(seconds: 2),
     );
 
     _slideAnimation = Tween<Offset>(
@@ -60,13 +61,21 @@ class _ChatFieldWidgetState extends State<ChatFieldWidget>
       ),
     );
 
-    Future.delayed(const Duration(seconds: 1), () {
-      _animationController.forward().then((_) {
-        setState(() {
-          _isAnimating = false;
+    // If we want to animate on init, run the animation.
+    // Otherwise, immediately show the final state.
+    if (widget.animateOnInit) {
+      Future.delayed(const Duration(seconds: 1), () {
+        _animationController.forward().then((_) {
+          setState(() {
+            _isAnimating = false;
+          });
         });
       });
-    });
+    } else {
+      _animationController.value = 1.0;
+      _isAnimating = false;
+    }
+
     _focusNode.addListener(_handleFocusChange);
   }
 
@@ -99,9 +108,20 @@ class _ChatFieldWidgetState extends State<ChatFieldWidget>
         ));
 
         widget.scrollListToEnd(performForceScroll: true);
+
+        // Navigator.of(context).push(
+        //   MaterialPageRoute(
+        //     builder: (_) => ChatScreen(
+        //       chatList: widget.chatBloc.chatList,
+        //       chatBloc: widget.chatBloc,
+        //     ),
+        //   ),
+        // );
       } else {
-        showCustomMessage('There is an issue with your Connectivity, pls check',
-            context: context);
+        showCustomMessage(
+          'There is an issue with your Connectivity, pls check',
+          context: context,
+        );
       }
     } catch (e) {
       showCustomMessage('Error while sending message', context: context);
@@ -114,34 +134,49 @@ class _ChatFieldWidgetState extends State<ChatFieldWidget>
 
   @override
   Widget build(BuildContext context) {
-    final maxHeight = ResponsiveSizeUtils.getResponsiveHeight(context,
-        mobileHeight: 100, tabletHeight: 150, desktopHeight: 150,);
-    // final isSmallMobile = MediaQuery.of(context).size.height <= 750;
+    final maxHeight = ResponsiveSizeUtils.getResponsiveHeight(
+      context,
+      mobileHeight: 100,
+      desktopHeight: 150,
+    );
+    final isSmallMobile = MediaQuery.of(context).size.height <= 750;
     return Expanded(
       child: SlideTransition(
-        position: _slideAnimation, // Use slide animation
+        position: _slideAnimation,
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 300),
+          margin: ResponsivePadding.getResponsiveOnlyPadding(
+            context,
+            tabletRight: 12,
+          ),
           constraints: BoxConstraints(
+            maxWidth: MediaQuery.of(context).size.width * 0.9,
             maxHeight: isExpanded
                 ? maxHeight
-                : ResponsiveSizeUtils.getResponsiveHeight(context,
-                    mobileHeight: 50, desktopHeight: 70,fourKHeight: 55),
+                : ResponsiveSizeUtils.getResponsiveHeight(
+                    context,
+                    mobileHeight: 50,
+                    desktopHeight: 70,
+                    fourKHeight: 55,
+                  ),
           ),
           decoration: BoxDecoration(
             color: Colors.white60,
             borderRadius: BorderRadius.circular(
-                ResponsiveSizeUtils.getResponsiveRadius(context,
-                    mobileRadius: 35, desktopRadius: 50)),
+              ResponsiveSizeUtils.getResponsiveRadius(context,
+                  mobileRadius: 35, desktopRadius: 50),
+            ),
           ),
           child: TextField(
             style: TextStyle(
-                fontSize: ResponsiveTextUtils.getResponsiveTextSize(context,
-                    mobileFontSize: 15.5,
-                    desktopFontSize: 15,
-                    ),
-                fontFamily: FontFamily.primaryFont,
-                fontWeight: FontWeight.w400),
+              fontSize: ResponsiveTextUtils.getResponsiveTextSize(
+                context,
+                mobileFontSize: 15.5,
+                desktopFontSize: 15,
+              ),
+              fontFamily: FontFamily.primaryFont,
+              fontWeight: FontWeight.w400,
+            ),
             enabled: !_isAnimating,
             controller: _chatTextController,
             focusNode: _focusNode,
@@ -156,19 +191,25 @@ class _ChatFieldWidgetState extends State<ChatFieldWidget>
             decoration: InputDecoration(
               hintText: "How can I help you?",
               hintStyle: TextStyle(
-                  color: ChatColors.homeTextBoxFontColor,
-                  fontSize: ResponsiveTextUtils.getResponsiveTextSize(context,
-                      mobileFontSize: 15.5,
-                      desktopFontSize: 15,
-                   ),
-                  fontFamily: FontFamily.primaryFont,
-                  fontWeight: FontWeight.w400,
-                  height: ResponsiveSizeUtils.getResponsiveHeight(context,
-                      allHeight: 1)),
+                color: ChatColors.homeTextBoxFontColor,
+                fontSize: ResponsiveTextUtils.getResponsiveTextSize(
+                  context,
+                  mobileFontSize: 15.5,
+                  desktopFontSize: 15,
+                ),
+                fontFamily: FontFamily.primaryFont,
+                fontWeight: FontWeight.w400,
+                height: ResponsiveSizeUtils.getResponsiveHeight(context,
+                    allHeight: 1),
+              ),
               contentPadding: ResponsivePadding.getResponsivePadding(
                 context,
-                mobileEdgeInsets: const EdgeInsets.only(
-                    left: 18, right: 18, top: 15, bottom: 15),
+                mobileEdgeInsets: EdgeInsets.only(
+                  left: 18,
+                  right: 18,
+                  top: isSmallMobile ? 4 : 15,
+                  bottom: isSmallMobile ? 13 : 15,
+                ),
                 desktopEdgeInsets: const EdgeInsets.only(
                   left: 20,
                   right: 20,
@@ -176,7 +217,11 @@ class _ChatFieldWidgetState extends State<ChatFieldWidget>
                   bottom: 19,
                 ),
                 fourKEdgeInsets: const EdgeInsets.only(
-                    left: 20, right: 20, top: 19, bottom: 19),
+                  left: 20,
+                  right: 20,
+                  top: 19,
+                  bottom: 19,
+                ),
               ),
               border: InputBorder.none,
               suffixIcon: Wrap(
@@ -223,7 +268,7 @@ class _ChatFieldWidgetState extends State<ChatFieldWidget>
     _scrollController.dispose();
     _chatTextController.dispose();
     _focusNode.dispose();
-    _animationController.dispose(); // Dispose the animation controller
+    _animationController.dispose();
     super.dispose();
   }
 }

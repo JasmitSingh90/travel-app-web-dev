@@ -1,4 +1,5 @@
 import 'dart:async';
+
 import 'package:costartravel/src/ui/resources/chat_colors.dart';
 import 'package:costartravel/src/ui/support/enums.dart';
 import 'package:costartravel/src/ui/support/responsive_utils/responsive_padding_utils.dart';
@@ -6,17 +7,24 @@ import 'package:costartravel/src/ui/support/responsive_utils/responsive_size_uti
 import 'package:costartravel/src/ui/support/responsive_utils/responsive_text_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AiMessageWidget extends StatefulWidget {
   final String message;
+  final String? errorMessage; // Optional error message
   final bool useAnimation;
   final ValueChanged<bool>? onTypingComplete;
+
+  /// New: Callback for retry
+  final VoidCallback? onRetry;
 
   const AiMessageWidget({
     Key? key,
     required this.message,
+    this.errorMessage,
     this.useAnimation = true,
     this.onTypingComplete,
+    this.onRetry, // Provide a function to resend the message
   }) : super(key: key);
 
   @override
@@ -28,15 +36,16 @@ class _AiMessageWidgetState extends State<AiMessageWidget> {
   int currentWordIndex = 0;
   String displayedMessage = "";
   Timer? timer;
+  bool isTypingCompleted = false;
 
   @override
   void initState() {
     super.initState();
     _initializeWords(widget.message);
+
     if (widget.useAnimation) {
       _startTyping();
     } else {
-      // If no animation, show entire message instantly
       displayedMessage = widget.message;
       currentWordIndex = words.length;
       _notifyComplete();
@@ -44,9 +53,8 @@ class _AiMessageWidgetState extends State<AiMessageWidget> {
   }
 
   void _initializeWords(String text) {
-    // Split into words
     final newWords = text.split(' ');
-    // Add only new words if already had some words
+
     if (newWords.length > words.length) {
       final additionalWords = newWords.sublist(words.length);
       words.addAll(additionalWords);
@@ -65,9 +73,10 @@ class _AiMessageWidgetState extends State<AiMessageWidget> {
           }
           currentWordIndex++;
         });
-        // Check if we're done typing all currently available words
+
         if (currentWordIndex == words.length) {
           _notifyComplete();
+          isTypingCompleted = true;
         } else {
           _notifyProgress();
         }
@@ -78,32 +87,32 @@ class _AiMessageWidgetState extends State<AiMessageWidget> {
   }
 
   void _notifyComplete() {
-    if (widget.onTypingComplete != null) {
-      widget.onTypingComplete!(true);
-    }
+    widget.onTypingComplete?.call(true);
   }
 
   void _notifyProgress() {
-    if (widget.onTypingComplete != null) {
-      widget.onTypingComplete!(false);
-    }
+    widget.onTypingComplete?.call(false);
   }
 
   @override
   void didUpdateWidget(AiMessageWidget oldWidget) {
     super.didUpdateWidget(oldWidget);
+
     if (oldWidget.message != widget.message) {
       final oldWordCount = words.length;
       _initializeWords(widget.message);
 
-      // If there are new words to type
       if (words.length > oldWordCount && widget.useAnimation) {
-        // If typing had completed previously and we got new words, resume typing
-        if (currentWordIndex < words.length) {
+        if (!isTypingCompleted) {
+          _startTyping();
+        } else {
+          setState(() {
+            currentWordIndex = oldWordCount;
+            isTypingCompleted = false;
+          });
           _startTyping();
         }
       } else if (!widget.useAnimation) {
-        // If animation is off, display all at once
         setState(() {
           displayedMessage = widget.message;
           currentWordIndex = words.length;
@@ -121,39 +130,69 @@ class _AiMessageWidgetState extends State<AiMessageWidget> {
 
   @override
   Widget build(BuildContext context) {
+    if (widget.errorMessage != null && widget.errorMessage!.trim().isNotEmpty) {
+      return _buildErrorMessage();
+    }
+
     if (widget.message.trim().isEmpty) {
       return const SizedBox.shrink();
     }
 
+    return _buildMessage();
+  }
+
+  Widget _buildErrorMessage() {
     return Padding(
-      padding: ResponsivePadding.getResponsiveOnlyPadding(context,
-          allLeft: 10, allRight: 20),
+      padding: ResponsivePadding.getResponsiveOnlyPadding(context, allLeft: 10.w, allRight: 20.w),
       child: Align(
         alignment: Alignment.centerLeft,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
-              width: ResponsiveSizeUtils.getResponsiveWidth(context,
-                  mobileWidth: 20, desktopWidth: 25),
-              height: ResponsiveSizeUtils.getResponsiveHeight(context,
-                  mobileHeight: 20, desktopHeight: 25),
-              child: Image.asset("assets/images/ai_sparkles.png"),
+            _buildAiIcon(),
+            const SizedBox(width: 10.0),
+            Flexible(
+              child: Text(
+                widget.errorMessage!,
+                style: TextStyle(
+                  color: Colors.red,
+                  fontSize: ResponsiveTextUtils.getResponsiveTextSize(context, mobileFontSize: 13, desktopFontSize: 11, fourKFontSize: 13),
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
             ),
+            const SizedBox(width: 8),
+            if (widget.onRetry != null)
+              InkWell(
+                onTap: widget.onRetry,
+                child: const Icon(Icons.refresh, size: 16, color: Colors.red),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildMessage() {
+    return Padding(
+      padding: ResponsivePadding.getResponsiveOnlyPadding(context, allLeft: 10.w, allRight: 20.w),
+      child: Align(
+        alignment: Alignment.centerLeft,
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _buildAiIcon(),
             const SizedBox(width: 10.0),
             Expanded(
               child: MarkdownBody(
                 data: displayedMessage,
                 styleSheet: MarkdownStyleSheet(
                   p: TextStyle(
-                      fontSize: ResponsiveTextUtils.getResponsiveTextSize(
-                          context,
-                          mobileFontSize: 13,
-                          desktopFontSize: 13,
-                      ),
-                      fontWeight: FontWeight.w400,
-                      color: ChatColors.kChatFontSecondaryColor,
-                      fontFamily: FontFamily.primaryFont),
+                    fontSize: ResponsiveTextUtils.getResponsiveTextSize(context, mobileFontSize: 13, desktopFontSize: 13, tabletFontSize: 16),
+                    fontWeight: FontWeight.w400,
+                    color: ChatColors.kChatFontSecondaryColor,
+                    fontFamily: FontFamily.primaryFont,
+                  ),
                 ),
               ),
             ),
@@ -162,11 +201,17 @@ class _AiMessageWidgetState extends State<AiMessageWidget> {
       ),
     );
   }
+
+  Widget _buildAiIcon() {
+    return SizedBox(
+      width: ResponsiveSizeUtils.getResponsiveWidth(context, mobileWidth: 20, desktopWidth: 25),
+      height: ResponsiveSizeUtils.getResponsiveHeight(context, mobileHeight: 20, desktopHeight: 25),
+      child: Image.asset("assets/images/ai_sparkles.png"),
+    );
+  }
 }
 
 
-
-
 // import 'dart:async';
 // import 'package:flutter/material.dart';
 // import 'package:flutter_markdown/flutter_markdown.dart';
@@ -328,11 +373,6 @@ class _AiMessageWidgetState extends State<AiMessageWidget> {
 //   }
 // }
 
-
-
-
-
-
 // import 'dart:async';
 // import 'package:flutter/material.dart';
 // import 'package:flutter_markdown/flutter_markdown.dart';
@@ -493,4 +533,3 @@ class _AiMessageWidgetState extends State<AiMessageWidget> {
 //     );
 //   }
 // }
-
