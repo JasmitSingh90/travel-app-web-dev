@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <!--
+  <!--
       If you are serving your web app in a path other than the root, change the
       href value below to reflect the base path you are serving from.
 
@@ -14,51 +15,54 @@
       This is a placeholder for base href that will be replaced by the value of
       the `--base-href` argument provided to `flutter build`.
     -->
-    <base href="./">
+  <base href="./">
 
-    <meta charset="UTF-8">
-    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-    <meta name="description" content="A new Flutter project.">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
 
-    <!-- iOS meta tags & icons -->
-    <meta name="google-signin-client_id" content="719221376180-do7vc0l2s5so64anp2sop3o7gb80drtk.apps.googleusercontent.com">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="costartravel">
-    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <!-- iOS meta tags & icons -->
+  <meta name="google-signin-client_id"
+    content="719221376180-do7vc0l2s5so64anp2sop3o7gb80drtk.apps.googleusercontent.com">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="costartravel">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png"/>
-    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@ricky0123/vad-web@0.0.19/dist/bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/keyur2maru/vad_dart@latest/dist/vad_web.js"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@ricky0123/vad-web@0.0.19/dist/bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/keyur2maru/vad_dart@latest/dist/vad_web.js"></script>
 
-    <title>costartravel</title>
-    <link rel="manifest" href="manifest.json">
+  <title>costartravel</title>
+  <link rel="manifest" href="manifest.json">
 
-    <script>
-        // The value below is injected by flutter build, do not touch.
-        const serviceWorkerVersion = "2868127665";
-    </script>
-    <!-- This script adds the flutter initialization JS code -->
-    <script src="flutter.js" defer></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh4ZcG1VAmjUzGqAr4VjPFHzaebtCaWQ8"></script>
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "3644110809";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh4ZcG1VAmjUzGqAr4VjPFHzaebtCaWQ8"></script>
 </head>
+
 <body>
-<script>
-    window.addEventListener('load', function(ev) {
+  <script>
+    window.addEventListener('load', function (ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
             appRunner.runApp();
           });
         }
       });
     });
-</script>
+  </script>
 </body>
+
 </html>
