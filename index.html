@@ -2,20 +2,10 @@
 <html>
 
 <head>
-  <!--
-      If you are serving your web app in a path other than the root, change the
-      href value below to reflect the base path you are serving from.
+  <script src="assets/packages/vad/assets/ort.js"></script>
 
-      The path provided below has to start and end with a slash "/" in order for
-      it to work correctly.
-
-      For more details:
-      * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-      This is a placeholder for base href that will be replaced by the value of
-      the `--base-href` argument provided to `flutter build`.
-    -->
-  <base href="./">
+  <!-- <base href="/"> -->
+  <base href="/travel-app-web-dev/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -31,16 +21,13 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
-  <script src="assets/vad/ort.js"></script>
-  <script src="assets/vad/bundle.min.js" defer></script>
-  <script src="assets/vad/vad_web.js" defer></script>
 
   <title>costartravel</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "1751471735";
+    const serviceWorkerVersion = "1333084779";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -48,6 +35,8 @@
 </head>
 
 <body>
+  <script src="assets/packages/vad/assets/bundle.min.js" defer></script>
+  <script src="assets/packages/vad/assets/vad_web.js" defer></script>
   <script>
     window.addEventListener('load', function (ev) {
       // Download main.dart.js
