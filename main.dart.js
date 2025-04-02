@@ -55228,7 +55228,8 @@ A.aKt.prototype={
 $1(a){$.k0()},
 $S:191}
 A.aKu.prototype={
-$0(){if(this.a.fr!=null)A.eT(self,"startListeningImpl",[0.05,0.05,40,40,512,8,!1,"v5","assets/vad/","assets/vad/"])
+$0(){var s="assets/packages/vad/assets/"
+if(this.a.fr!=null)A.eT(self,"startListeningImpl",[0.05,0.05,40,40,512,8,!1,"v5",s,s])
 return A.d9([null],t.H)},
 $S:546}
 A.aKv.prototype={
