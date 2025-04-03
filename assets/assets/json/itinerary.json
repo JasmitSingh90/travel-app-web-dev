@@ -2,1125 +2,299 @@
     "chat_session_id": "01c343e3-a15d-40e5-a8c5-a8bfaf43e4c3",
     "status": "undefined",
     "type": "search_params",
-    "data":
-    {
-        "itinerary":
-        [
+    "data": {
+        "itinerary": [
             {
-                "description_and_budget":
-                {
+                "description_and_budget": {
                     "day_number": 1,
-                    "day_description": "On your first day, you will arrive in Ho Chi Minh City, settle into your comfortable 3-star hotel, and begin exploring the bustling urban scene. Enjoy delicious Thai and Korean flavors while immersing yourself in the local culture.",
-                    "amount": 80,
-                    "lower_end_amount": 60,
-                    "higher_end_amount": 100
+                    "day_description": "Welcome to the start of your Paris adventure. Before departure, ensure you pack comfortable walking shoes, weather-appropriate clothing, essential travel documents, and a versatile day bag. This day focuses on international travel from Singapore to Paris, getting settled in, and enjoying a memorable evening dinner in the heart of the city. Expect to immerse yourself in Parisian charm and rest up for the adventures ahead.",
+                    "amount": 250,
+                    "lower_end_amount": 200,
+                    "higher_end_amount": 300
                 },
-                "date": "2025-03-25",
-                "activities":
-                [
+                "date": "2025-04-05",
+                "activities": [
                     {
-                        "title": "Essential Preparations",
-                        "class": "leisure",
-                        "type": "other",
-                        "search_location": "Hometown, MyCountry",
-                        "description": "Prepare light, breathable clothing for Vietnam’s warm climate, bring any required medications, keep essential travel documents like passports, arrange electronics and chargers, and pack sunscreen, hats, and reusable water bottles. This ensures a hassle-free, enjoyable family trip.",
-                        "time_frame_start": "06:30",
-                        "time_frame_end": "07:00",
-                        "ID": "leisure_1",
-                        "selected": false,
-                        "date": "2025-03-25",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title":"Cultural Evening Show",
-                        "class":"event",
-                        "type":"show",
-                        "search_location":"Denpasar, Bali, Indonesia",
-                        "description":"Immerse yourself in a vibrant performance featuring Balinese dance, music, and storytelling. This event offers an opportunity to witness the island’s distinct artistic heritage and dynamic stage presence. Expect enthralling costumes, rhythmic gamelan beats, and lively choreography.",
-                        "time_frame_start":"17:45",
-                        "time_frame_end":"19:45",
-                        "ID":"event_1",
-                        "selected":false,
-                        "date":"2025-03-28",
-                        "no_of_adults":2,
-                        "no_of_children":1
-                    },
-                    {
-                        "title": "Flight to Ho Chi Minh",
+                        "title": "Flight to Paris",
                         "class": "transport",
                         "type": "flight",
-                        "source_location": "Hometown, MyCountry",
-                        "source_location_airport_code": "AAA",
-                        "destination_location": "Tan Son Nhat, Ho Chi Minh City, Vietnam",
-                        "destination_location_airport_code": "SGN",
-                        "description": "Take an economy flight for a budget-friendly journey that accommodates two adults and one child. Enjoy basic in-flight services, ensuring everyone arrives refreshed and ready to discover Ho Chi Minh City’s energetic vibes.",
-                        "time_frame_start": "07:00",
-                        "time_frame_end": "11:00",
+                        "source_location": "Changi Airport, Singapore, Singapore",
+                        "source_location_airport_code": "SIN",
+                        "destination_location": "Charles de Gaulle Airport, Paris, France",
+                        "destination_location_airport_code": "CDG",
+                        "description": "This flight is chosen because it offers a convenient departure time from Singapore and a comfortable arrival in Paris. Over roughly thirteen hours, travelers can rest onboard and arrive ready to explore Europe's iconic city. The plane journey includes in-flight meals and entertainment, making it a practical choice to cover the distance swiftly.",
+                        "time_frame_start": "06:00",
+                        "time_frame_end": "14:00",
                         "ID": "transport_1",
                         "selected": false,
-                        "cabin_class": "economy",
+                        "cabin_class": "none",
                         "max_connections": null,
-                        "date": "2025-03-25",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
+                        "date": "2025-04-05",
+                        "no_of_adults": null,
+                        "no_of_children": null
                     },
                     {
-                        "title": "Check-in at 3-star Hotel",
-                        "class": "hotel",
-                        "type": "checkin",
-                        "search_location": "District 1, Ho Chi Minh City, Vietnam",
-                        "description": "Enjoy a wallet-friendly 3-star hotel in the central district. Expect clean rooms, air conditioning, and helpful staff. This property keeps costs below 100 USD nightly while offering easy access to local attractions and restaurants.",
-                        "time_frame_start": "11:00",
-                        "time_frame_end": "11:30",
-                        "ID": "hotel_1",
-                        "selected": false,
-                        "amenities":
-                        [],
-                        "budget":
-                        {
-                            "min_price": null,
-                            "max_price": 100
-                        },
-                        "star_rating": 3,
-                        "sort_by": "price",
-                        "date": "2025-03-25",
-                        "no_of_adults": 2,
-                        "no_of_children": 1,
-                        "no_of_nights": 2
-                    },
-                    {
-                        "title": "Thai Lunch",
-                        "class": "restaurant",
-                        "type": "lunch",
-                        "search_location": "District 1, Ho Chi Minh City, Vietnam",
-                        "description": "Savor aromatic curries, tasty stir-fries, and fragrant noodle soups at a cozy Thai eatery. This midday feast is perfect for recharging after your trip and introduces you to Southeast Asia’s bold, spicy flavors.",
-                        "time_frame_start": "11:30",
-                        "time_frame_end": "12:30",
-                        "ID": "restaurant_1",
-                        "selected": false,
-                        "cuisine":
-                        [
-                            "thai",
-                            "korean"
-                        ],
-                        "date": "2025-03-25",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Ben Thanh Market Tour",
-                        "class": "leisure",
-                        "type": "sightseeing",
-                        "search_location": "Ben Thanh, Ho Chi Minh City, Vietnam",
-                        "description": "Immerse yourself in one of the city’s oldest markets. Browse vibrant stalls filled with local products, souvenirs, and street food. Haggling for deals and sampling fresh specialties reveals an exciting slice of local life.",
-                        "time_frame_start": "12:30",
-                        "time_frame_end": "16:30",
-                        "ID": "leisure_2",
-                        "selected": false,
-                        "date": "2025-03-25",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Korean Dinner",
-                        "class": "restaurant",
-                        "type": "dinner",
-                        "search_location": "Phu Nhuan, Ho Chi Minh City, Vietnam",
-                        "description": "Indulge in delicious Korean dishes like bibimbap or bulgogi with classic sides, including kimchi and pickled vegetables. This family-friendly spot offers a lively environment where you can continue enjoying international flavors during your stay.",
-                        "time_frame_start": "16:30",
-                        "time_frame_end": "17:30",
-                        "ID": "restaurant_2",
-                        "selected": false,
-                        "cuisine":
-                        [
-                            "thai",
-                            "korean"
-                        ],
-                        "date": "2025-03-25",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Drive to Hotel",
+                        "title": "Airport to Eiffel Tower",
                         "class": "transport",
                         "type": "road",
-                        "source_location": "Phu Nhuan, Ho Chi Minh City, Vietnam",
+                        "source_location": "Charles de Gaulle Airport, Paris, France",
                         "source_location_airport_code": "",
-                        "destination_location": "District 1, Ho Chi Minh City, Vietnam",
+                        "destination_location": "Eiffel Tower, Paris, France",
                         "destination_location_airport_code": "",
-                        "description": "Return to your hotel via a short road trip. Relax after a fulfilling day of food and exploration, and prepare to rest before continuing your discovery of Ho Chi Minh City tomorrow.",
-                        "time_frame_start": "17:30",
-                        "time_frame_end": "18:00",
+                        "description": "Traveling by car or shuttle from Charles de Gaulle Airport to the hotel near the Eiffel Tower ensures a prompt start to the trip. This drive takes you through the heart of Paris, offering glimpses of renowned avenues and architectural marvels. It provides a comfortable way to transition from flight to your first Parisian destination.",
+                        "time_frame_start": "14:00",
+                        "time_frame_end": "14:45",
                         "ID": "transport_2",
                         "selected": false,
-                        "date": "2025-03-25",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    }
-                ]
-            },
-            {
-                "description_and_budget":
-                {
-                    "day_number": 2,
-                    "day_description": "Continue exploring Ho Chi Minh City’s rich heritage, from war history to cultural landmarks. Satisfy your appetite with more Thai and Korean flavors, immersing yourself deeper into the city’s dynamic energy.",
-                    "amount": 70,
-                    "lower_end_amount": 60,
-                    "higher_end_amount": 90
-                },
-                "date": "2025-03-26",
-                "activities":
-                [
+                        "date": "2025-04-05",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
                     {
-                        "title": "Ride to Breakfast",
-                        "class": "transport",
-                        "type": "road",
-                        "source_location": "District 1, Ho Chi Minh City, Vietnam",
-                        "source_location_airport_code": "",
-                        "destination_location": "District 1, Ho Chi Minh City, Vietnam",
-                        "destination_location_airport_code": "",
-                        "description": "Set out from your centrally located hotel to a nearby breakfast venue. Glimpse the morning buzz of Ho Chi Minh City as you navigate bustling streets en route to your meal.",
-                        "time_frame_start": "07:30",
-                        "time_frame_end": "08:00",
-                        "ID": "transport_3",
+                        "title": "Hotel Checkin",
+                        "class": "hotel",
+                        "type": "checkin",
+                        "search_location": "Eiffel Tower, Paris, France",
+                        "description": "Settling into a comfortable hotel near the Eiffel Tower provides an excellent starting point for exploring Paris. This central location offers convenient access to famous landmarks, quaint cafés, and panoramic city views. The hotel's amenities create a relaxing atmosphere after a long flight, ensuring guests can rest well and prepare for the upcoming adventures.",
+                        "time_frame_start": "14:45",
+                        "time_frame_end": "15:15",
+                        "ID": "hotel_1",
                         "selected": false,
-                        "date": "2025-03-26",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
+                        "amenities": [],
+                        "budget": {
+                            "min_price": null,
+                            "max_price": null
+                        },
+                        "star_rating": null,
+                        "sort_by": "price",
+                        "date": "2025-04-05",
+                        "no_of_adults": null,
+                        "no_of_children": null,
+                        "no_of_nights": 1
                     },
                     {
-                        "title": "Thai Breakfast",
-                        "class": "restaurant",
-                        "type": "breakfast",
-                        "search_location": "District 1, Ho Chi Minh City, Vietnam",
-                        "description": "Kick-start the day with authentic Thai breakfast treats such as congee, omelets with chili sauce, or aromatic soups. The spicy and savory options refuel you for the city’s fascinating explorations ahead.",
-                        "time_frame_start": "08:00",
-                        "time_frame_end": "09:00",
-                        "ID": "restaurant_3",
-                        "selected": false,
-                        "cuisine":
-                        [
-                            "thai",
-                            "korean"
-                        ],
-                        "date": "2025-03-26",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Cu Chi Tunnels Visit",
-                        "class": "leisure",
-                        "type": "sightseeing",
-                        "search_location": "Cu Chi, Ho Chi Minh City, Vietnam",
-                        "description": "Venture into a historically significant tunnel system, once used by soldiers during the Vietnam War. Crawl through sections to experience the conditions firsthand and gain deeper insight into Vietnam’s past resiliency.",
-                        "time_frame_start": "09:00",
-                        "time_frame_end": "12:30",
-                        "ID": "leisure_3",
-                        "selected": false,
-                        "date": "2025-03-26",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title":"Cultural Evening Show",
-                        "class":"event",
-                        "type":"show",
-                        "search_location":"Denpasar, Bali, Indonesia",
-                        "description":"Immerse yourself in a vibrant performance featuring Balinese dance, music, and storytelling. This event offers an opportunity to witness the island’s distinct artistic heritage and dynamic stage presence. Expect enthralling costumes, rhythmic gamelan beats, and lively choreography.",
-                        "time_frame_start":"17:45",
-                        "time_frame_end":"19:45",
-                        "ID":"event_1",
-                        "selected":false,
-                        "date":"2025-03-28",
-                        "no_of_adults":2,
-                        "no_of_children":1
-                    },
-                    {
-                        "title": "Drive to Lunch",
-                        "class": "transport",
-                        "type": "road",
-                        "source_location": "Cu Chi, Ho Chi Minh City, Vietnam",
-                        "source_location_airport_code": "",
-                        "destination_location": "District 1, Ho Chi Minh City, Vietnam",
-                        "destination_location_airport_code": "",
-                        "description": "Return to the city center, passing local neighborhoods and scenic spots. This comfortable ride lets you rest and reflect on the morning’s historical tour before indulging in a well-deserved meal.",
-                        "time_frame_start": "12:30",
-                        "time_frame_end": "13:00",
-                        "ID": "transport_4",
-                        "selected": false,
-                        "date": "2025-03-26",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Korean Lunch",
-                        "class": "restaurant",
-                        "type": "lunch",
-                        "search_location": "District 1, Ho Chi Minh City, Vietnam",
-                        "description": "Enjoy Korean favorites like sizzling hot pot, savory pancakes, or a hearty bibimbap. This midday feast provides the necessary fuel for the remaining explorations you have planned in the city.",
-                        "time_frame_start": "13:00",
-                        "time_frame_end": "14:00",
-                        "ID": "restaurant_4",
-                        "selected": false,
-                        "cuisine":
-                        [
-                            "thai",
-                            "korean"
-                        ],
-                        "date": "2025-03-26",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "War Remnants Museum",
-                        "class": "leisure",
-                        "type": "sightseeing",
-                        "search_location": "District 3, Ho Chi Minh City, Vietnam",
-                        "description": "Gain a profound view of Vietnam’s turbulent past through exhibitions and photographs. This museum offers a sobering look at the country’s war history, highlighting the resilience and spirit of its people.",
-                        "time_frame_start": "14:00",
-                        "time_frame_end": "17:00",
-                        "ID": "leisure_4",
-                        "selected": false,
-                        "date": "2025-03-26",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Ride to Dinner",
-                        "class": "transport",
-                        "type": "road",
-                        "source_location": "District 3, Ho Chi Minh City, Vietnam",
-                        "source_location_airport_code": "",
-                        "destination_location": "District 1, Ho Chi Minh City, Vietnam",
-                        "destination_location_airport_code": "",
-                        "description": "Navigate through evening traffic to reach your dinner location. Observe the vibrant city lights and roadside activities as you transition to your next memorable meal experience.",
-                        "time_frame_start": "17:00",
-                        "time_frame_end": "17:30",
-                        "ID": "transport_5",
-                        "selected": false,
-                        "date": "2025-03-26",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Thai Dinner",
+                        "title": "French Dinner",
                         "class": "restaurant",
                         "type": "dinner",
-                        "search_location": "District 1, Ho Chi Minh City, Vietnam",
-                        "description": "Round off your day with a delicious Thai dinner. Delight in tangy soups, fiery curries, and fresh salads that create a satisfying harmony of sweet, sour, and spicy flavors.",
-                        "time_frame_start": "17:30",
-                        "time_frame_end": "18:30",
-                        "ID": "restaurant_5",
+                        "search_location": "Latin Quarter, Paris, France",
+                        "description": "Enjoying an authentic French dinner in the Latin Quarter immerses travelers in the local ambience. The area is renowned for its historic charm, lively student culture, and varied dining options. This meal offers a delicious introduction to Parisian cuisine, from classic dishes like coq au vin to sweet crêpes, all while soaking in the romantic atmosphere.",
+                        "time_frame_start": "19:00",
+                        "time_frame_end": "20:00",
+                        "ID": "restaurant_1",
                         "selected": false,
-                        "cuisine":
-                        [
-                            "thai",
-                            "korean"
-                        ],
-                        "date": "2025-03-26",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
+                        "cuisine": [],
+                        "date": "2025-04-05",
+                        "no_of_adults": null,
+                        "no_of_children": null
                     },
                     {
                         "title": "Return to Hotel",
                         "class": "transport",
                         "type": "road",
-                        "source_location": "District 1, Ho Chi Minh City, Vietnam",
+                        "source_location": "Latin Quarter, Paris, France",
                         "source_location_airport_code": "",
-                        "destination_location": "District 1, Ho Chi Minh City, Vietnam",
+                        "destination_location": "Eiffel Tower, Paris, France",
                         "destination_location_airport_code": "",
-                        "description": "Conclude your eventful day by traveling a short distance back to your hotel. Take time to relax, organize souvenirs, and prepare for the early departure on the following day.",
-                        "time_frame_start": "18:30",
-                        "time_frame_end": "19:00",
-                        "ID": "transport_6",
+                        "description": "Returning to the hotel area after dinner via a short taxi or rideshare trip helps travelers end the day smoothly. Passing the city's illuminated landmarks at night offers a tantalizing glimpse of Paris’s celebrated ambiance. This journey guarantees a swift, hassle-free route back, allowing guests to settle in for a restful evening in the heart of the city.",
+                        "time_frame_start": "20:00",
+                        "time_frame_end": "20:30",
+                        "ID": "transport_3",
                         "selected": false,
-                        "date": "2025-03-26",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
+                        "date": "2025-04-05",
+                        "no_of_adults": null,
+                        "no_of_children": null
                     }
                 ]
             },
             {
-                "description_and_budget":
-                {
-                    "day_number": 3,
-                    "day_description": "Depart Ho Chi Minh City and head to the coastal charms of Nha Trang. Enjoy a scenic flight, explore tranquil beaches, and continue savoring Thai and Korean cuisine in a new setting.",
-                    "amount": 85,
-                    "lower_end_amount": 70,
-                    "higher_end_amount": 100
+                "description_and_budget": {
+                    "day_number": 2,
+                    "day_description": "On this second day in Paris, you will explore treasured cultural highlights, from the Louvre’s legendary galleries to the bohemian charm of Montmartre. Be ready for a full day of immersion in art, history, and French gastronomy, ensuring you make the most of your final hours in the City of Light. After a delightful time, you will take an evening flight back to Singapore to conclude the trip.",
+                    "amount": 250,
+                    "lower_end_amount": 200,
+                    "higher_end_amount": 300
                 },
-                "date": "2025-03-27",
-                "activities":
-                [
+                "date": "2025-04-06",
+                "activities": [
                     {
                         "title": "Hotel Checkout",
                         "class": "hotel",
                         "type": "checkout",
-                        "search_location": "District 1, Ho Chi Minh City, Vietnam",
-                        "description": "Gather your belongings, settle any final bills, and say farewell to Ho Chi Minh City’s bustling atmosphere. Ensure you have all items accounted for as you prepare to travel onward.",
-                        "time_frame_start": "07:00",
-                        "time_frame_end": "07:30",
+                        "search_location": "Eiffel Tower, Paris, France",
+                        "description": "Checking out of the hotel marks the beginning of a flexible day in Paris. By finalizing the stay early, travelers can maximize sightseeing opportunities. Storing luggage or traveling light frees up time to explore local attractions without returning to the hotel. This convenient departure paves the way for a full day of discovery.",
+                        "time_frame_start": "08:00",
+                        "time_frame_end": "08:30",
                         "ID": "hotel_1",
                         "selected": false,
-                        "amenities":
-                        [],
-                        "budget":
-                        {
+                        "amenities": [],
+                        "budget": {
                             "min_price": null,
-                            "max_price": 100
+                            "max_price": null
                         },
-                        "star_rating": 3,
+                        "star_rating": null,
                         "sort_by": "price",
-                        "date": "2025-03-27",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
+                        "date": "2025-04-06",
+                        "no_of_adults": null,
+                        "no_of_children": null
                     },
                     {
-                        "title": "Road to Airport",
+                        "title": "Eiffel Tower to Louvre",
                         "class": "transport",
                         "type": "road",
-                        "source_location": "District 1, Ho Chi Minh City, Vietnam",
+                        "source_location": "Eiffel Tower, Paris, France",
                         "source_location_airport_code": "",
-                        "destination_location": "Tan Son Nhat, Ho Chi Minh City, Vietnam",
+                        "destination_location": "Louvre Museum, Paris, France",
                         "destination_location_airport_code": "",
-                        "description": "Take a car ride through morning traffic to reach Tan Son Nhat Airport. Enjoy final glimpses of the city’s busy streets before your flight to the coastal haven of Nha Trang.",
-                        "time_frame_start": "07:30",
-                        "time_frame_end": "08:30",
-                        "ID": "transport_7",
-                        "selected": false,
-                        "date": "2025-03-27",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Flight to Nha Trang",
-                        "class": "transport",
-                        "type": "flight",
-                        "source_location": "Tan Son Nhat, Ho Chi Minh City, Vietnam",
-                        "source_location_airport_code": "SGN",
-                        "destination_location": "Cam Ranh, Nha Trang, Vietnam",
-                        "destination_location_airport_code": "CXR",
-                        "description": "Enjoy an economy flight, ensuring a straightforward journey for two adults and one child. Appreciate the aerial views of Vietnam’s coastline as you anticipate Nha Trang’s famous beaches and attractions.",
+                        "description": "Taking a short ride from the Eiffel Tower area to the Louvre Museum in the morning eliminates travel worries later in the day. This route is known for its glimpses of iconic architecture along the Seine. Arriving early ensures ample time to admire the museum’s extensive art collections.",
                         "time_frame_start": "08:30",
-                        "time_frame_end": "09:30",
-                        "ID": "transport_8",
+                        "time_frame_end": "09:00",
+                        "ID": "transport_4",
                         "selected": false,
-                        "cabin_class": "economy",
-                        "max_connections": null,
-                        "date": "2025-03-27",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
+                        "date": "2025-04-06",
+                        "no_of_adults": null,
+                        "no_of_children": null
                     },
                     {
-                        "title": "Transfer to City Center",
-                        "class": "transport",
-                        "type": "road",
-                        "source_location": "Cam Ranh, Nha Trang, Vietnam",
-                        "source_location_airport_code": "",
-                        "destination_location": "Nha Trang City Center, Nha Trang, Vietnam",
-                        "destination_location_airport_code": "",
-                        "description": "A scenic road trip unveils glimpses of the sea and green landscapes. Prepare for a laid-back coastal experience that sets the tone for a relaxing stay in Nha Trang.",
-                        "time_frame_start": "09:30",
-                        "time_frame_end": "10:15",
-                        "ID": "transport_9",
-                        "selected": false,
-                        "date": "2025-03-27",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Check-in at Nha Trang Hotel",
-                        "class": "hotel",
-                        "type": "checkin",
-                        "search_location": "Nha Trang City Center, Nha Trang, Vietnam",
-                        "description": "Settle into a pleasant 3-star accommodation boasting close proximity to sandy beaches. Clean rooms, ocean breezes, and family-friendly service create the perfect backdrop for your coastal getaway under 100 USD nightly.",
-                        "time_frame_start": "10:15",
-                        "time_frame_end": "10:45",
-                        "ID": "hotel_2",
-                        "selected": false,
-                        "amenities":
-                        [],
-                        "budget":
-                        {
-                            "min_price": null,
-                            "max_price": 100
-                        },
-                        "star_rating": 3,
-                        "sort_by": "price",
-                        "date": "2025-03-27",
-                        "no_of_adults": 2,
-                        "no_of_children": 1,
-                        "no_of_nights": 1
-                    },
-                    {
-                        "title": "Thai Lunch",
-                        "class": "restaurant",
-                        "type": "lunch",
-                        "search_location": "Nha Trang City Center, Nha Trang, Vietnam",
-                        "description": "Indulge in Thai dishes featuring fresh seafood, fragrant herbs, and spices. The coastal air adds a bright twist to green curries and tangy soups, offering a refreshing midday meal experience.",
-                        "time_frame_start": "10:45",
-                        "time_frame_end": "11:45",
-                        "ID": "restaurant_6",
-                        "selected": false,
-                        "cuisine":
-                        [
-                            "thai",
-                            "korean"
-                        ],
-                        "date": "2025-03-27",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Nha Trang Beach Time",
-                        "class": "leisure",
-                        "type": "sightseeing",
-                        "search_location": "Tran Phu Beach, Nha Trang, Vietnam",
-                        "description": "Bask in the sun along this famous shoreline. Choose from strolling the coast, swimming in the clear waters, or simply relaxing under a parasol while the gentle waves create a serene atmosphere.",
-                        "time_frame_start": "11:45",
-                        "time_frame_end": "15:45",
-                        "ID": "leisure_5",
-                        "selected": false,
-                        "date": "2025-03-27",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Korean Dinner",
-                        "class": "restaurant",
-                        "type": "dinner",
-                        "search_location": "Nha Trang City Center, Nha Trang, Vietnam",
-                        "description": "Satisfy your palate with savory Korean specialties such as grilled meats or simmering stews. Perfect for families, this meal lets you enjoy beloved international flavors while exploring a new coastal locale.",
-                        "time_frame_start": "15:45",
-                        "time_frame_end": "16:45",
-                        "ID": "restaurant_7",
-                        "selected": false,
-                        "cuisine":
-                        [
-                            "thai",
-                            "korean"
-                        ],
-                        "date": "2025-03-27",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Return to Hotel",
-                        "class": "transport",
-                        "type": "road",
-                        "source_location": "Nha Trang City Center, Nha Trang, Vietnam",
-                        "source_location_airport_code": "",
-                        "destination_location": "Nha Trang City Center, Nha Trang, Vietnam",
-                        "destination_location_airport_code": "",
-                        "description": "End the day with a brief transfer back to your hotel. Reflect on the relaxing beach experiences and prepare to continue exploring Vietnam’s diverse attractions in the days ahead.",
-                        "time_frame_start": "16:45",
-                        "time_frame_end": "17:15",
-                        "ID": "transport_10",
-                        "selected": false,
-                        "date": "2025-03-27",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    }
-                ]
-            },
-            {
-                "description_and_budget":
-                {
-                    "day_number": 4,
-                    "day_description": "Depart for Da Nang, a coastal city known for its modern vibe and impressive landscapes. Enjoy mountain views alongside more Thai and Korean meals, then settle into another cozy hotel.",
-                    "amount": 85,
-                    "lower_end_amount": 70,
-                    "higher_end_amount": 100
-                },
-                "date": "2025-03-28",
-                "activities":
-                [
-                    {
-                        "title": "Checkout from Nha Trang",
-                        "class": "hotel",
-                        "type": "checkout",
-                        "search_location": "Nha Trang City Center, Nha Trang, Vietnam",
-                        "description": "Pack up your belongings and finalize any outstanding bills at your Nha Trang accommodation. Bid farewell to the calming sound of waves and prepare for the next destination on your list.",
-                        "time_frame_start": "07:00",
-                        "time_frame_end": "07:30",
-                        "ID": "hotel_2",
-                        "selected": false,
-                        "amenities":
-                        [],
-                        "budget":
-                        {
-                            "min_price": null,
-                            "max_price": 100
-                        },
-                        "star_rating": 3,
-                        "sort_by": "price",
-                        "date": "2025-03-28",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Road to Cam Ranh Airport",
-                        "class": "transport",
-                        "type": "road",
-                        "source_location": "Nha Trang City Center, Nha Trang, Vietnam",
-                        "source_location_airport_code": "",
-                        "destination_location": "Cam Ranh, Nha Trang, Vietnam",
-                        "destination_location_airport_code": "",
-                        "description": "Travel along scenic roads back to Cam Ranh Airport, taking in final glimpses of Nha Trang’s coastline. This drive offers a peaceful last look at the region’s ocean views and mountainous frames.",
-                        "time_frame_start": "07:30",
-                        "time_frame_end": "08:30",
-                        "ID": "transport_11",
-                        "selected": false,
-                        "date": "2025-03-28",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Flight to Da Nang",
-                        "class": "transport",
-                        "type": "flight",
-                        "source_location": "Cam Ranh, Nha Trang, Vietnam",
-                        "source_location_airport_code": "CXR",
-                        "destination_location": "Da Nang Airport, Da Nang, Vietnam",
-                        "destination_location_airport_code": "DAD",
-                        "description": "Board an economy flight for a comfortable jump to central Vietnam. Look out for impressive coastal scenery from above, giving a taste of Da Nang’s natural wonders before you land.",
-                        "time_frame_start": "08:30",
-                        "time_frame_end": "09:30",
-                        "ID": "transport_12",
-                        "selected": false,
-                        "cabin_class": "economy",
-                        "max_connections": null,
-                        "date": "2025-03-28",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Drive to Da Nang Center",
-                        "class": "transport",
-                        "type": "road",
-                        "source_location": "Da Nang Airport, Da Nang, Vietnam",
-                        "source_location_airport_code": "",
-                        "destination_location": "Da Nang City Center, Da Nang, Vietnam",
-                        "destination_location_airport_code": "",
-                        "description": "Head into Da Nang’s city center by car. Pass notable landmarks like the Dragon Bridge, and witness the city’s blend of modern infrastructure and charming coastal ambiance.",
-                        "time_frame_start": "09:30",
-                        "time_frame_end": "10:00",
-                        "ID": "transport_13",
-                        "selected": false,
-                        "date": "2025-03-28",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Check-in at Da Nang Hotel",
-                        "class": "hotel",
-                        "type": "checkin",
-                        "search_location": "Da Nang City Center, Da Nang, Vietnam",
-                        "description": "Arrive at a welcoming 3-star hotel in the heart of Da Nang. Enjoy comfortable furnishings, child-friendly services, and reasonable rates that keep plush convenience within an economical budget.",
-                        "time_frame_start": "10:00",
-                        "time_frame_end": "10:30",
-                        "ID": "hotel_3",
-                        "selected": false,
-                        "amenities":
-                        [],
-                        "budget":
-                        {
-                            "min_price": null,
-                            "max_price": 100
-                        },
-                        "star_rating": 3,
-                        "sort_by": "price",
-                        "date": "2025-03-28",
-                        "no_of_adults": 2,
-                        "no_of_children": 1,
-                        "no_of_nights": 2
-                    },
-                    {
-                        "title": "Thai Lunch",
-                        "class": "restaurant",
-                        "type": "lunch",
-                        "search_location": "Da Nang City Center, Da Nang, Vietnam",
-                        "description": "Rejuvenate with bold Thai flavors, from spicy tom yum soups to rich green curries. The blend of sweet, sour, and spicy notes offers a lively midday lift for your sightseeing plans.",
-                        "time_frame_start": "10:30",
-                        "time_frame_end": "11:30",
-                        "ID": "restaurant_8",
-                        "selected": false,
-                        "cuisine":
-                        [
-                            "thai",
-                            "korean"
-                        ],
-                        "date": "2025-03-28",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Marble Mountains Tour",
-                        "class": "leisure",
-                        "type": "sightseeing",
-                        "search_location": "Marble Mountains, Da Nang, Vietnam",
-                        "description": "Explore the cluster of limestone and marble hills dotted with caves, shrines, and pagodas. Climb steps to panoramic vistas of Da Nang’s coastline, capturing memorable photographs along the way.",
-                        "time_frame_start": "11:30",
-                        "time_frame_end": "15:30",
-                        "ID": "leisure_6",
-                        "selected": false,
-                        "date": "2025-03-28",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Korean Dinner",
-                        "class": "restaurant",
-                        "type": "dinner",
-                        "search_location": "Da Nang City Center, Da Nang, Vietnam",
-                        "description": "Tuck into savory Korean classics like grilled meats or fresh kimchi-based stews. This comforting spread caters to different taste preferences, ensuring both adults and kids can enjoy a flavorful evening meal.",
-                        "time_frame_start": "15:30",
-                        "time_frame_end": "16:30",
-                        "ID": "restaurant_9",
-                        "selected": false,
-                        "cuisine":
-                        [
-                            "thai",
-                            "korean"
-                        ],
-                        "date": "2025-03-28",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Drive to Hotel",
-                        "class": "transport",
-                        "type": "road",
-                        "source_location": "Da Nang City Center, Da Nang, Vietnam",
-                        "source_location_airport_code": "",
-                        "destination_location": "Da Nang City Center, Da Nang, Vietnam",
-                        "destination_location_airport_code": "",
-                        "description": "Conclude the day by returning to your hotel. Unwind after a wonderful afternoon spent exploring, and get ready for a trip to Hoi An’s cultural treasures the next morning.",
-                        "time_frame_start": "16:30",
-                        "time_frame_end": "17:00",
-                        "ID": "transport_14",
-                        "selected": false,
-                        "date": "2025-03-28",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    }
-                ]
-            },
-            {
-                "description_and_budget":
-                {
-                    "day_number": 5,
-                    "day_description": "Embark on a day trip from Da Nang to Hoi An, famed for its lantern-lit streets and cultural fusion. Return in the evening to rest in Da Nang’s comfortable surroundings.",
-                    "amount": 75,
-                    "lower_end_amount": 60,
-                    "higher_end_amount": 100
-                },
-                "date": "2025-03-29",
-                "activities":
-                [
-                    {
-                        "title": "Journey to Hoi An",
-                        "class": "transport",
-                        "type": "road",
-                        "source_location": "Da Nang City Center, Da Nang, Vietnam",
-                        "source_location_airport_code": "",
-                        "destination_location": "Hoi An, Da Nang, Vietnam",
-                        "destination_location_airport_code": "",
-                        "description": "Venture south by car, observing lush rice paddies and local villages. Anticipate Hoi An’s unique atmosphere, famed for its heritage sites and significant port history along the Thu Bon River.",
-                        "time_frame_start": "07:30",
-                        "time_frame_end": "08:30",
-                        "ID": "transport_15",
-                        "selected": false,
-                        "date": "2025-03-29",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Hoi An Ancient Town",
-                        "class": "leisure",
-                        "type": "sightseeing",
-                        "search_location": "Ancient Town, Hoi An, Vietnam",
-                        "description": "Roam centuries-old streets displaying a blend of Vietnamese, Chinese, and French influences. Marvel at colorful lanterns, shop for souvenirs, and appreciate the well-preserved architecture reflecting Hoi An’s mercantile past.",
-                        "time_frame_start": "08:30",
-                        "time_frame_end": "12:30",
-                        "ID": "leisure_7",
-                        "selected": false,
-                        "date": "2025-03-29",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Thai Lunch",
-                        "class": "restaurant",
-                        "type": "lunch",
-                        "search_location": "Ancient Town, Hoi An, Vietnam",
-                        "description": "Refuel with a Thai feast at a quaint local spot. Indulge in tangy salads, creamy coconut curries, and steamed jasmine rice, all while surrounded by Hoi An’s timeless ambiance.",
-                        "time_frame_start": "12:30",
-                        "time_frame_end": "13:30",
-                        "ID": "restaurant_10",
-                        "selected": false,
-                        "cuisine":
-                        [
-                            "thai",
-                            "korean"
-                        ],
-                        "date": "2025-03-29",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Visit Japanese Bridge",
-                        "class": "leisure",
-                        "type": "sightseeing",
-                        "search_location": "Japanese Bridge, Hoi An, Vietnam",
-                        "description": "Discover this iconic pedestrian bridge, a symbol of the town’s multi-cultural heritage. Admire its wooden structure, snap photos, and explore nearby antique houses to grasp Hoi An’s enduring global influences.",
-                        "time_frame_start": "13:30",
-                        "time_frame_end": "15:30",
-                        "ID": "leisure_8",
-                        "selected": false,
-                        "date": "2025-03-29",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Korean Dinner",
-                        "class": "restaurant",
-                        "type": "dinner",
-                        "search_location": "Hoi An, Da Nang, Vietnam",
-                        "description": "Wrap up the day’s exploration with a satisfying Korean meal. Dig into table-grilled meats or soothing soups, balancing the afternoon’s historical wanderings with a comforting, family-style dining experience.",
-                        "time_frame_start": "15:30",
-                        "time_frame_end": "16:30",
-                        "ID": "restaurant_11",
-                        "selected": false,
-                        "cuisine":
-                        [
-                            "thai",
-                            "korean"
-                        ],
-                        "date": "2025-03-29",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Return to Da Nang Hotel",
-                        "class": "transport",
-                        "type": "road",
-                        "source_location": "Hoi An, Da Nang, Vietnam",
-                        "source_location_airport_code": "",
-                        "destination_location": "Da Nang City Center, Da Nang, Vietnam",
-                        "destination_location_airport_code": "",
-                        "description": "Travel back by road through modest countryside paths into the lit-up streets of Da Nang. Reflect on Hoi An’s storied heritage and prepare for further northbound adventures ahead.",
-                        "time_frame_start": "16:30",
-                        "time_frame_end": "17:30",
-                        "ID": "transport_16",
-                        "selected": false,
-                        "date": "2025-03-29",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    }
-                ]
-            },
-            {
-                "description_and_budget":
-                {
-                    "day_number": 6,
-                    "day_description": "Fly from Da Nang to Hanoi, Vietnam’s capital. Check in near the Old Quarter, experience the city’s blend of modern vibrancy and historical charm, and continue sampling Thai and Korean delights.",
-                    "amount": 85,
-                    "lower_end_amount": 70,
-                    "higher_end_amount": 100
-                },
-                "date": "2025-03-30",
-                "activities":
-                [
-                    {
-                        "title": "Checkout Da Nang Hotel",
-                        "class": "hotel",
-                        "type": "checkout",
-                        "search_location": "Da Nang City Center, Da Nang, Vietnam",
-                        "description": "Gather your luggage, clear any bills, and say goodbye to the warm comfort of your Da Nang accommodation. Get set for your journey to Vietnam’s bustling capital city.",
-                        "time_frame_start": "07:00",
-                        "time_frame_end": "07:30",
-                        "ID": "hotel_3",
-                        "selected": false,
-                        "amenities":
-                        [],
-                        "budget":
-                        {
-                            "min_price": null,
-                            "max_price": 100
-                        },
-                        "star_rating": 3,
-                        "sort_by": "price",
-                        "date": "2025-03-30",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Drive to Airport",
-                        "class": "transport",
-                        "type": "road",
-                        "source_location": "Da Nang City Center, Da Nang, Vietnam",
-                        "source_location_airport_code": "",
-                        "destination_location": "Da Nang Airport, Da Nang, Vietnam",
-                        "destination_location_airport_code": "",
-                        "description": "A quick trip brings you to Da Nang Airport. Glance at the city’s modern skyline one last time, recalling the beaches, marbled hills, and cultural discoveries made so far.",
-                        "time_frame_start": "07:30",
-                        "time_frame_end": "08:00",
-                        "ID": "transport_17",
-                        "selected": false,
-                        "date": "2025-03-30",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Flight to Hanoi",
-                        "class": "transport",
-                        "type": "flight",
-                        "source_location": "Da Nang Airport, Da Nang, Vietnam",
-                        "source_location_airport_code": "DAD",
-                        "destination_location": "Noi Bai Airport, Hanoi, Vietnam",
-                        "destination_location_airport_code": "HAN",
-                        "description": "Board an economy flight that comfortably accommodates your family. Enjoy a brief journey northward, where cooler temperatures and Hanoi’s unique cultural tapestry await your arrival.",
-                        "time_frame_start": "08:00",
-                        "time_frame_end": "09:30",
-                        "ID": "transport_18",
-                        "selected": false,
-                        "cabin_class": "economy",
-                        "max_connections": null,
-                        "date": "2025-03-30",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Airport to Old Quarter",
-                        "class": "transport",
-                        "type": "road",
-                        "source_location": "Noi Bai Airport, Hanoi, Vietnam",
-                        "source_location_airport_code": "",
-                        "destination_location": "Old Quarter, Hanoi, Vietnam",
-                        "destination_location_airport_code": "",
-                        "description": "Journey through suburban Hanoi into its historic core. Notice the blend of French colonial buildings, modern structures, and winding streets bustling with vendors and scooter traffic.",
-                        "time_frame_start": "09:30",
-                        "time_frame_end": "10:30",
-                        "ID": "transport_19",
-                        "selected": false,
-                        "date": "2025-03-30",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Check-in at Hanoi Hotel",
-                        "class": "hotel",
-                        "type": "checkin",
-                        "search_location": "Old Quarter, Hanoi, Vietnam",
-                        "description": "Settle into a 3-star hotel near Hanoi’s lively Old Quarter. Expect basic comforts, friendly service, and an ideal location for strolling to many of the capital’s historic and culinary highlights.",
-                        "time_frame_start": "10:30",
-                        "time_frame_end": "11:00",
-                        "ID": "hotel_4",
-                        "selected": false,
-                        "amenities":
-                        [],
-                        "budget":
-                        {
-                            "min_price": null,
-                            "max_price": 100
-                        },
-                        "star_rating": 3,
-                        "sort_by": "price",
-                        "date": "2025-03-30",
-                        "no_of_adults": 2,
-                        "no_of_children": 1,
-                        "no_of_nights": 1
-                    },
-                    {
-                        "title": "Thai Lunch",
-                        "class": "restaurant",
-                        "type": "lunch",
-                        "search_location": "Old Quarter, Hanoi, Vietnam",
-                        "description": "Recharge with Thai cuisine prepared with a northern twist, suited for Hanoi’s cooler climate. Relish in spiced soups and hearty curries as you adapt to the capital’s distinct culinary influences.",
-                        "time_frame_start": "11:00",
+                        "title": "Discover the Louvre",
+                        "class": "attraction",
+                        "type": "tourist spot",
+                        "search_location": "Louvre Museum, Paris, France",
+                        "description": "Visiting the Louvre Museum is a must for anyone in Paris, offering an expansive collection of over 35,000 artworks. Home to the Mona Lisa and other world-famous masterpieces, the museum tells stories spanning centuries. Explorers can traverse galleries filled with sculptures, paintings, and historical artifacts, immersing themselves in the grandeur of French culture.",
+                        "time_frame_start": "09:00",
                         "time_frame_end": "12:00",
-                        "ID": "restaurant_12",
+                        "ID": "attraction_1",
                         "selected": false,
-                        "cuisine":
-                        [
-                            "thai",
-                            "korean"
-                        ],
-                        "date": "2025-03-30",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
+                        "date": "2025-04-06",
+                        "no_of_adults": null,
+                        "no_of_children": null
                     },
                     {
-                        "title": "Hoan Kiem Lake Stroll",
-                        "class": "leisure",
-                        "type": "sightseeing",
-                        "search_location": "Hoan Kiem Lake, Hanoi, Vietnam",
-                        "description": "Surround yourself with local life at this historic lake, where residents practice tai chi at dawn. Visit Ngoc Son Temple on a small island and observe Hanoi’s cultural heartbeat from the water’s edge.",
-                        "time_frame_start": "12:00",
-                        "time_frame_end": "15:00",
-                        "ID": "leisure_9",
-                        "selected": false,
-                        "date": "2025-03-30",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Korean Dinner",
-                        "class": "restaurant",
-                        "type": "dinner",
-                        "search_location": "Old Quarter, Hanoi, Vietnam",
-                        "description": "Taste comforting Korean staples like hot kimchi jiigae or crispy pancakes. The robust flavors match Hanoi’s lively ambience, ensuring a pleasant dining experience for both adults and children alike.",
-                        "time_frame_start": "15:00",
-                        "time_frame_end": "16:00",
-                        "ID": "restaurant_13",
-                        "selected": false,
-                        "cuisine":
-                        [
-                            "thai",
-                            "korean"
-                        ],
-                        "date": "2025-03-30",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Drive to Hotel",
-                        "class": "transport",
-                        "type": "road",
-                        "source_location": "Old Quarter, Hanoi, Vietnam",
-                        "source_location_airport_code": "",
-                        "destination_location": "Old Quarter, Hanoi, Vietnam",
-                        "destination_location_airport_code": "",
-                        "description": "Conclude your first evening in Hanoi with a short trip back to your hotel. Catch glimpses of illuminated streets and French colonial façades, reflecting on the capital’s distinctive ambiance.",
-                        "time_frame_start": "16:00",
-                        "time_frame_end": "16:30",
-                        "ID": "transport_20",
-                        "selected": false,
-                        "date": "2025-03-30",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    }
-                ]
-            },
-            {
-                "description_and_budget":
-                {
-                    "day_number": 7,
-                    "day_description": "Spend your final day exploring more of Hanoi’s cultural gems. After soaking in the local history and atmosphere, bid farewell to Vietnam as you journey back home with cherished memories.",
-                    "amount": 80,
-                    "lower_end_amount": 60,
-                    "higher_end_amount": 100
-                },
-                "date": "2025-03-31",
-                "activities":
-                [
-                    {
-                        "title": "Temple of Literature Tour",
-                        "class": "leisure",
-                        "type": "sightseeing",
-                        "search_location": "Temple of Literature, Hanoi, Vietnam",
-                        "description": "Explore Vietnam’s first national university, where manicured gardens and historic halls highlight Confucian teachings. Admire the architecture, statues, and stone steles that celebrate the country’s centuries-old scholarly traditions and accomplishments.",
-                        "time_frame_start": "07:30",
-                        "time_frame_end": "10:30",
-                        "ID": "leisure_10",
-                        "selected": false,
-                        "date": "2025-03-31",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Thai Lunch",
+                        "title": "Classic Parisian Lunch",
                         "class": "restaurant",
                         "type": "lunch",
-                        "search_location": "Old Quarter, Hanoi, Vietnam",
-                        "description": "Savor a final burst of Thai flavors, from zesty papaya salad to creamy coconut-based dishes. Reflect on the myriad tastes and local highlights enjoyed during your multi-city Vietnamese adventure.",
-                        "time_frame_start": "10:30",
-                        "time_frame_end": "11:30",
-                        "ID": "restaurant_14",
-                        "selected": false,
-                        "cuisine":
-                        [
-                            "thai",
-                            "korean"
-                        ],
-                        "date": "2025-03-31",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title": "Checkout Hanoi Hotel",
-                        "class": "hotel",
-                        "type": "checkout",
-                        "search_location": "Old Quarter, Hanoi, Vietnam",
-                        "description": "Finalize all payments and collect your belongings. Bid farewell to the welcoming staff, taking one more look around the Old Quarter before heading off to the airport for your return trip.",
-                        "time_frame_start": "11:30",
-                        "time_frame_end": "12:00",
-                        "ID": "hotel_4",
-                        "selected": false,
-                        "amenities":
-                        [],
-                        "budget":
-                        {
-                            "min_price": null,
-                            "max_price": 100
-                        },
-                        "star_rating": 3,
-                        "sort_by": "price",
-                        "date": "2025-03-31",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
-                    },
-                    {
-                        "title":"Cultural Evening Show",
-                        "class":"event",
-                        "type":"show",
-                        "search_location":"Denpasar, Bali, Indonesia",
-                        "description":"Immerse yourself in a vibrant performance featuring Balinese dance, music, and storytelling. This event offers an opportunity to witness the island’s distinct artistic heritage and dynamic stage presence. Expect enthralling costumes, rhythmic gamelan beats, and lively choreography.",
-                        "time_frame_start":"17:45",
-                        "time_frame_end":"19:45",
-                        "ID":"event_1",
-                        "selected":false,
-                        "date":"2025-03-28",
-                        "no_of_adults":2,
-                        "no_of_children":1
-                    },
-                    {
-                        "title": "Drive to Airport",
-                        "class": "transport",
-                        "type": "road",
-                        "source_location": "Old Quarter, Hanoi, Vietnam",
-                        "source_location_airport_code": "",
-                        "destination_location": "Noi Bai Airport, Hanoi, Vietnam",
-                        "destination_location_airport_code": "",
-                        "description": "Travel across Hanoi’s suburban roads toward Noi Bai Airport. Observe final snapshots of local street life, from traditional homes to modern developments, as you prepare to depart the capital city.",
+                        "search_location": "Louvre Museum, Paris, France",
+                        "description": "Savoring lunch near the Louvre Museum allows visitors to experience authentic French dishes in a historic area. With menu options ranging from crusty baguettes and salads to rich onion soup, midday dining here offers a pleasant break before continuing explorations. Diners can appreciate the timeless cityscape while enjoying local hospitality.",
                         "time_frame_start": "12:00",
                         "time_frame_end": "13:00",
-                        "ID": "transport_21",
+                        "ID": "restaurant_2",
                         "selected": false,
-                        "date": "2025-03-31",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
+                        "cuisine": [],
+                        "date": "2025-04-06",
+                        "no_of_adults": null,
+                        "no_of_children": null
                     },
                     {
-                        "title": "Flight Back Home",
+                        "title": "Louvre to Notre Dame",
+                        "class": "transport",
+                        "type": "road",
+                        "source_location": "Louvre Museum, Paris, France",
+                        "source_location_airport_code": "",
+                        "destination_location": "Notre Dame Cathedral, Paris, France",
+                        "destination_location_airport_code": "",
+                        "description": "Traveling just a short distance along the Seine to Notre Dame Cathedral offers a scenic transition between notable Parisian landmarks. The quick ride ensures minimal downtime, keeping the day’s schedule efficient. Passing by the cityscape reveals centuries-old architecture and picturesque river views, highlighting the city’s cultural richness.",
+                        "time_frame_start": "13:00",
+                        "time_frame_end": "13:15",
+                        "ID": "transport_5",
+                        "selected": false,
+                        "date": "2025-04-06",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Notre Dame Exploration",
+                        "class": "leisure",
+                        "type": "sightseeing",
+                        "search_location": "Notre Dame Cathedral, Paris, France",
+                        "description": "Exploring the surroundings of Notre Dame Cathedral invites visitors to appreciate Gothic architectural details, centuries-old history, and the vibrant atmosphere of the adjacent River Seine. Wandering around the cathedral’s exterior and the nearby streets reveals charming bookstores, artistic vendors, and local cafés. This pause allows travelers to connect with Paris’s spiritual and cultural heritage.",
+                        "time_frame_start": "13:15",
+                        "time_frame_end": "14:30",
+                        "ID": "leisure_1",
+                        "selected": false,
+                        "date": "2025-04-06",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Notre Dame to Montmartre",
+                        "class": "transport",
+                        "type": "road",
+                        "source_location": "Notre Dame Cathedral, Paris, France",
+                        "source_location_airport_code": "",
+                        "destination_location": "Montmartre, Paris, France",
+                        "destination_location_airport_code": "",
+                        "description": "Journeying from the historic center near Notre Dame to the artistic haven of Montmartre can be a highlight in itself. The route offers glimpses of Paris’s shifting cityscape, from medieval streets to bohemian quarters. This half-hour trip by car or public transport retains your momentum, ensuring no precious sightseeing time is wasted.",
+                        "time_frame_start": "14:30",
+                        "time_frame_end": "15:00",
+                        "ID": "transport_6",
+                        "selected": false,
+                        "date": "2025-04-06",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Montmartre Stroll",
+                        "class": "leisure",
+                        "type": "sightseeing",
+                        "search_location": "Montmartre, Paris, France",
+                        "description": "Montmartre exudes a timeless charm, with its uphill cobblestone streets, the iconic Sacré-Cœur Basilica, and artistic heritage that once attracted masters like Picasso. Strolling through its narrow lanes reveals colorful cafés, caricature artists, and sweeping panoramic views of the city below. The area’s bohemian vibes create an inspiring environment perfect for relaxed exploration and memorable photographs.",
+                        "time_frame_start": "15:00",
+                        "time_frame_end": "17:00",
+                        "ID": "leisure_2",
+                        "selected": false,
+                        "date": "2025-04-06",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Dinner in Montmartre",
+                        "class": "restaurant",
+                        "type": "dinner",
+                        "search_location": "Montmartre, Paris, France",
+                        "description": "Having dinner in Montmartre offers a unique glimpse into Paris’s artistic soul. Quaint bistros serve traditional meals like escargots, gratin dauphinois, and crème brûlée, surrounded by lively street art and music. Dining here just before sunset reveals the city’s skyline in a gorgeous light, making the experience both flavorful and visually enchanting.",
+                        "time_frame_start": "17:00",
+                        "time_frame_end": "18:00",
+                        "ID": "restaurant_3",
+                        "selected": false,
+                        "cuisine": [],
+                        "date": "2025-04-06",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Montmartre to CDG Airport",
+                        "class": "transport",
+                        "type": "road",
+                        "source_location": "Montmartre, Paris, France",
+                        "source_location_airport_code": "",
+                        "destination_location": "Charles de Gaulle Airport, Paris, France",
+                        "destination_location_airport_code": "",
+                        "description": "Leaving Montmartre for Charles de Gaulle Airport provides time before the international flight. Passing through Paris’s northern neighborhoods offers a final glimpse of local life. This direct route keeps the evening relaxed, ensuring travelers can manage any last-minute preparations at the airport without rushing.",
+                        "time_frame_start": "18:00",
+                        "time_frame_end": "18:45",
+                        "ID": "transport_7",
+                        "selected": false,
+                        "date": "2025-04-06",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Return Flight to Singapore",
                         "class": "transport",
                         "type": "flight",
-                        "source_location": "Noi Bai Airport, Hanoi, Vietnam",
-                        "source_location_airport_code": "HAN",
-                        "destination_location": "Hometown, MyCountry",
-                        "destination_location_airport_code": "AAA",
-                        "description": "Close out your Vietnamese journey with an economy flight home. Reflect on the experiences and flavors of Ho Chi Minh, Nha Trang, Da Nang, Hoi An, and Hanoi, creating memories to cherish forever.",
-                        "time_frame_start": "13:00",
-                        "time_frame_end": "17:00",
-                        "ID": "transport_22",
+                        "source_location": "Charles de Gaulle Airport, Paris, France",
+                        "source_location_airport_code": "CDG",
+                        "destination_location": "Changi Airport, Singapore, Singapore",
+                        "destination_location_airport_code": "SIN",
+                        "description": "This return flight from Paris to Singapore provides an overnight journey with ample rest time. Passing multiple time zones, it conveniently positions travelers to arrive back home the following day. In-flight services allow for comfortable meals, entertainment, and sleeping arrangements, making the long flight manageable. The schedule also ensures minimal disruption upon reaching Singapore.",
+                        "time_frame_start": "19:00",
+                        "time_frame_end": "09:00",
+                        "ID": "transport_8",
                         "selected": false,
-                        "cabin_class": "economy",
+                        "cabin_class": "none",
                         "max_connections": null,
-                        "date": "2025-03-31",
-                        "no_of_adults": 2,
-                        "no_of_children": 1
+                        "date": "2025-04-06",
+                        "no_of_adults": null,
+                        "no_of_children": null
                     }
                 ]
             }
