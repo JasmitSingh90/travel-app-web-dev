@@ -113,11 +113,14 @@ class ChatImageAssets {
   static const String flightLogo = '${assetHomeModulePath}flight_logo.svg';
   static const String calenderIcon = '${assetHomeModulePath}calender.svg';
   static const String femaleIcon = '${assetHomeModulePath}female_icon.svg';
-  static const String flightDoubleArrowIcon = '${assetHomeModulePath}flight_double_arrow.svg';
+  static const String flightDoubleArrowIcon =
+      '${assetHomeModulePath}flight_double_arrow.svg';
   static const String kidsIcon = '${assetHomeModulePath}kids_icon.svg';
   static const String maleIcon = '${assetHomeModulePath}male_icon.svg';
-  static const String locationArrow = '${assetHomeModulePath}location_arrow.svg';
-  static const String landingFlightIcon = '${assetHomeModulePath}landing_flight.svg';
+  static const String locationArrow =
+      '${assetHomeModulePath}location_arrow.svg';
+  static const String landingFlightIcon =
+      '${assetHomeModulePath}landing_flight.svg';
   static const String kMicFillIcon = '${assetHomeModulePath}mic_fill.svg';
   static const String kGradientImg = '${assetHomeModulePath}gradient_img.png';
   static const String dottedLineImg = '${assetHomeModulePath}dotted_line.svg';

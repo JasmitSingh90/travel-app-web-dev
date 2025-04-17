@@ -1,674 +1,501 @@
 {
-    "itinerary": [
-        {
-            "description_and_budget": {
-                "day_number": 1,
-                "day_description": "Day 1 will commence bright and early in Singapore, as you start your journey to Paris via a long-haul flight. Upon arrival, you’ll check into your hotel, settle in, and enjoy a relaxing dinner. In the evening, experience a local cultural event that introduces you to Parisian nightlife, setting the stage for a remarkable getaway.",
-                "amount": 600,
-                "lower_end_amount": 500,
-                "higher_end_amount": 700
+    "itinerary": {
+        "location": "Paris, Île-de-France, France",
+        "no_of_days": 2,
+        "title": "\"Discover Paris: City of Lights Adventure\"",
+        "description": "Paris, the capital city of France, is located in the Île-de-France region in the north-central part of the country. Known as \"The City of Light\" (La Ville Lumière), Paris is renowned for its rich history, stunning architecture, and vibrant culture. The city is a global center for art, fashion, gastronomy, and culture, making it one of the most visited cities in the world.\n\nOne of the most iconic landmarks in Paris is the Eiffel Tower, an iron lattice tower that stands on the Champ de Mars. Originally constructed for the 1889 World's Fair, it has become a symbol of France and offers breathtaking views of the city from its observation decks. Another architectural marvel is the Notre-Dame Cathedral, a masterpiece of French Gothic architecture, famous for its stunning stained glass windows and intricate sculptures.\n\nParis is also home to the Louvre Museum, the world's largest art museum and a historic monument in its own right. The museum houses thousands of works of art, including the Mona Lisa and the Venus de Milo. The Musée d'Orsay, located in a former railway station, is another must-visit for art lovers, featuring an extensive collection of Impressionist and Post-Impressionist masterpieces.\n\nThe city is famous for its charming neighborhoods, such as Montmartre, known for its bohemian past and the stunning Basilica of the Sacré-Cœur, and the Latin Quarter, with its lively atmosphere and historic educational institutions like the Sorbonne. The Seine River, which flows through the heart of Paris, is lined with picturesque quays and bridges, offering scenic boat tours and romantic walks.\n\nParis is also a fashion capital, hosting prestigious events like Paris Fashion Week and housing luxury boutiques along the famous Champs-Élysées and in the upscale district of Le Marais. The city's culinary scene is equally renowned, with a plethora of Michelin-starred restaurants, cozy bistros, and bustling cafés offering everything from traditional French cuisine to innovative gastronomic experiences.\n\nIn addition to its cultural and historical attractions, Paris is known for its vibrant nightlife, with a wide array of theaters, concert halls, and nightclubs. The city's parks and gardens, such as the Luxembourg Gardens and the Tuileries Garden, provide serene escapes from the urban hustle and bustle.\n\nOverall, Paris is a city that seamlessly blends the old with the new, offering a unique and unforgettable experience to all who visit. Its timeless charm, artistic heritage, and cosmopolitan flair make it a truly iconic destination.",
+        "place_details": {
+            "formattedAddress": "Île-de-France, France",
+            "location": {
+                "latitude": 48.849919799999995,
+                "longitude": 2.6370411
             },
-            "date": "2025-04-08",
-            "activities": [
+            "googleMapsUri": "https://maps.google.com/?cid=75297594565928304",
+            "websiteUri": "http://www.iledefrance.fr/",
+            "utcOffsetMinutes": 120,
+            "displayName": {
+                "text": "Île-de-France",
+                "languageCode": "en"
+            },
+            "photos": [
                 {
-                    "title": "Essential Packing",
-                    "class": "leisure",
-                    "type": "other",
-                    "search_location": "Singapore, Singapore, Singapore",
-                    "description": "Preparation is key when traveling internationally. Pack comfortable walking shoes for exploring Paris’s cobblestone streets, lightweight layers for variable spring weather, and important travel documents. Don’t forget adaptors, a portable charger, and any necessary medications.",
-                    "time_frame_start": "05:00",
-                    "time_frame_end": "05:15",
-                    "ID": "leisure_1",
-                    "selected": false,
-                    "date": "2025-04-08",
-                    "no_of_adults": null,
-                    "no_of_children": null
+                    "name": "places/ChIJF4ymA8Th5UcRcCWLaMOCCwE/photos/AeeoHcKiGDvsw6Cjw0raKVFudPvku8IMXRNHzlB1ct4YVv2MKrejzsgRv-HO_1o0hYgNEzcY2MEbvhj88HSZa0ykzncjnfGiYVJ17DYAEw3uI6mUo4hBp-8d148Q8JzyqeSR4BqxSf68afI4Z0-ClW25cXYIbe5AIMugYjuHLEWBU0YYf-uBWpJ65vrPVh8U5jNQnzKyBl_3JJO5g2wx5TW2F8BIjtWu58O3cZwKuxCIPDYwT4hmrJqQUD-GkJNYi882lg-dn49Xu6gDMY-SZthhc2cg9yayV7lkWLvotJhQlIeWAGJhWjUhS8z1TfDBHcxFe1zUg3KHtMiMfG-K71v65mmb0yx1_pYl_4ydZ7ABlrP-T-AF3zFOXWNIXf1YqodZwyxjqIYi9z4qKgBZAvFRV6ylmWeReReWVgyehhqrSNFldDw",
+                    "widthPx": 2592,
+                    "heightPx": 1936,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Gerrit Busser",
+                            "uri": "https://maps.google.com/maps/contrib/109729884868063749360",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVKiLh7gKaHgPgwppknFgtEmuVxC6mNu3JqmlLmMPTgzCEZPjF2=s100-p-k-no-mo"
+                        }
+                    ],
+                    "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDBpcac9AE&hl=en-US",
+                    "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDBpcac9AE!2e10!4m2!3m1!1s0x47e5e1c403a68c17:0x10b82c3688b2570"
                 },
                 {
-                    "title": "Flight to Paris",
-                    "class": "transport",
-                    "type": "flight",
-                    "source_location": "Changi, Singapore, Singapore",
-                    "source_location_airport_code": "SIN",
-                    "destination_location": "Charles de Gaulle, Paris, France",
-                    "destination_location_airport_code": "CDG",
-                    "description": "Choosing a morning departure from Singapore allows you to maximize your arrival day in Paris, despite the long flight. This direct route minimizes layovers and ensures you land ready to begin your exciting French adventure.",
-                    "time_frame_start": "06:30",
-                    "time_frame_end": "18:00",
-                    "ID": "transport_1",
-                    "selected": false,
-                    "cabin_class": "none",
-                    "max_connections": null,
-                    "date": "2025-04-08",
-                    "no_of_adults": null,
-                    "no_of_children": null
+                    "name": "places/ChIJF4ymA8Th5UcRcCWLaMOCCwE/photos/AeeoHcLYWO-44oJ_xFrrmXrhk1Hm9jLt13G7blX_h62neHTGRnFuhWC9HFDQJFSWiAmL0Aw3ReOpFt2c6jiGJNaXZNBST35vZ435wqx5cvtINDWaHr836rYJsstpzN7VVbgM7Ur6sQP2izR0eSEkaH1Xu3dNUAb1eOuqJlTPAH6epM4R6cWlRp6vPy1xBvSgMdLkRgBXfrKZbRnRoEnTc6FglnBZnlbfP8lOuZB-OewndM5_yUKeCB-EpLROY5LQ6FcQJyc4ubDAgjcD3lvtCNG-QWU4SuKbOWIZloT7zGqUc9B9US67Nyu19j1y8AhrW2-esIVyCVuCstSwjfnom0bw59moTGR4SyeyWj8y9Ixiobply8jAabBE_ILFG5fSOS02FP6p8u5_rnUrsU0SxiQgJEh5DrAdGv7T5h7dTuYA6XjvUq0",
+                    "widthPx": 2048,
+                    "heightPx": 1536,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Jean-Berchmans NKUNDIMANA",
+                            "uri": "https://maps.google.com/maps/contrib/117618559417828790119",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWa4egyNRLvFK4_8-1QKPW1nO5X4OoB4PcN1Le1u0NKBx9DheSV=s100-p-k-no-mo"
+                        }
+                    ],
+                    "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC6xtLI3QE&hl=en-US",
+                    "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC6xtLI3QE!2e10!4m2!3m1!1s0x47e5e1c403a68c17:0x10b82c3688b2570"
                 },
                 {
-                    "title": "Hotel Check-In",
-                    "class": "hotel",
-                    "type": "checkin",
-                    "search_location": "Seventh Arrondissement, Paris, France",
-                    "description": "Settle into a comfortable hotel in the elegant Seventh Arrondissement, conveniently located near major landmarks. This welcoming accommodation offers a restful environment after your flight, providing modern amenities, cozy linens, and an ideal base for exploring Paris.",
-                    "time_frame_start": "18:15",
-                    "time_frame_end": "18:45",
-                    "ID": "hotel_1",
-                    "selected": false,
-                    "amenities": [],
-                    "budget": {
-                        "min_price": null,
-                        "max_price": null
+                    "name": "places/ChIJF4ymA8Th5UcRcCWLaMOCCwE/photos/AeeoHcK_PzvPAiLR2zMVw06J1YYJoKiy-6yiSJ6WdIuOEBeiboeWGmNdCSV0LfxAQRbhkBkyHePUFpXm8CgX5774lpjmBDsE3D9ipzcGPPsfwbc_XjPjdnAPCKdO2RyYWkS5X85I4FNRd158NNQmRRwY9KKna1wnOvkmrUz7rnd7F6kQlVV4S5CbIHzErEVDGAGlTH0DGHAwJ9wIqDS6u75oqjuve_8NYhGHYstPdpCskogq9oLsiVolLaMK1CtJY_zHBUezIRgNKaxgg9ov7SVulyYfsD_WPbyCeWq-eq6kyEifoE_VUQtcm_Ku-QpMJkvcTz5491xXNyPMKn5eJbBun85VmJTh4Zikxyrt6eFOESFfZqQe87F7MmtVV-ALFmZuLWo5cfyhs1Tqn4MZJ9Abe_KfjAkSP3frhC8YFCIbie2P0w",
+                    "widthPx": 3024,
+                    "heightPx": 4032,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Liliana Ciuperca",
+                            "uri": "https://maps.google.com/maps/contrib/103690761118902598428",
+                            "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLCEBEGD9t3xC-PWNjCvTzAMQWCaG5NEYoWfxtVBzRz8ummP8CF=s100-p-k-no-mo"
+                        }
+                    ],
+                    "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDBt9HtWw&hl=en-US",
+                    "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDBt9HtWw!2e10!4m2!3m1!1s0x47e5e1c403a68c17:0x10b82c3688b2570"
+                },
+                {
+                    "name": "places/ChIJF4ymA8Th5UcRcCWLaMOCCwE/photos/AeeoHcKoz39j4UVsUdWPoGvgKNvGGePRhCSS5SxGEgvXiAN9xY9BL0zCA-ZLEOM3D6717pBoe5A1fAzqkJyduTJA8I6n2CJlgHyJpM55MSB5NuOTtaZ-7LOHoQKaWmN5w7bY2KUef0Q-m4qtcGJON9_vTD1wSJQZzKtuDK83AsjzF4BtyLfYsl78XXovbqLSSylDZkiN9MmZLvfpR13MjF23DMFrUuNcsrfC-FYFLTekVbkGlqnYf2G_paZF-30c9EchEgOfmgNCFMTlIr62G5F4xWE4oDBbH7JCDvlZfDFhHlTzSvnCX3BoAbcmAAd12dz6ShcY2S_3_j4-5ldqd46K3oan3y10ogx8JG_VPWDE3lAuKqWu-ZBbCFUaAg-shsgArbjBmPL_87Yv2SKQl7Em9rZCx1D5UJepD-QPu7rw8O_IRw",
+                    "widthPx": 1199,
+                    "heightPx": 673,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Alamine Hadrati",
+                            "uri": "https://maps.google.com/maps/contrib/109889165453240371061",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVv_bnmPqg7NOIPg4Cus51qgNyAcC04MO4ik_KYh-FvC8egKA=s100-p-k-no-mo"
+                        }
+                    ],
+                    "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDyw4CTSQ&hl=en-US",
+                    "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDyw4CTSQ!2e10!4m2!3m1!1s0x47e5e1c403a68c17:0x10b82c3688b2570"
+                },
+                {
+                    "name": "places/ChIJF4ymA8Th5UcRcCWLaMOCCwE/photos/AeeoHcLGO5DXTPixtKhjf0kGiiOH5UdZ3vMQEcyABcG75I6bImkAMOA5cAEu4dWZ2JGiq-TFw_vk-dXmtoGrDYW4aOVJ8damHXeCL843_cxcTfkNnQtELAYQ9GqBTPjp1IhdMuDhEchMVYsZfw2z3KRDMePJjaf3bl3155QP22Mcxepl3lghjuEI4lKwI0luRIxQ-p3DJ3-XsGXxHLdIFpVORSg63oU9jNK0N687aprm4Ta_QzD6k3DTGoVUmm0b_1LctBhplaztMn_pEhXgMNrqM5P7RHGPVFfcae2mse-m5ivgk2HDsDgqgY31yHQNsjKtpLrNEkw5I2lqnlw-BAHPVgK_G9OgcAggCKx-wFWEeYhnFyKyd6ociFyuR_0lYS3YZJs6d2-l6giIg_caoHF9ZkOYUDBBotYda3sNx4degw-nQw",
+                    "widthPx": 724,
+                    "heightPx": 483,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Alamine Hadrati",
+                            "uri": "https://maps.google.com/maps/contrib/109889165453240371061",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVv_bnmPqg7NOIPg4Cus51qgNyAcC04MO4ik_KYh-FvC8egKA=s100-p-k-no-mo"
+                        }
+                    ],
+                    "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDyw4DxVA&hl=en-US",
+                    "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDyw4DxVA!2e10!4m2!3m1!1s0x47e5e1c403a68c17:0x10b82c3688b2570"
+                },
+                {
+                    "name": "places/ChIJF4ymA8Th5UcRcCWLaMOCCwE/photos/AeeoHcIpsGTYjnUEHZJNRhj9Pw48YMKMlrjswdUjAc81XMKSD2y5jI3nFnUDJ9s4lcJQ88sQwy6pzdB8eLCTluwV2w1lzG1mNECQ51iRCbTTDlMpbPgM0hmtOP7RgAxN-Ub12NnvdCKccyL2jRPPZfJFPHt_H8rlK9FLfOihl-8ZUnkJ1PI-J7lBRhbYPqVcDuzOSp_x0JO-iLdS5BIVcY2QNvaaqLvj8hMXCErzIKhUBPdq2fKyhuhuOF6PMGKkWGvAxD85CaWrqlhDWHvQjmrH3vukAwiktJcWvzR5ShMswZb7GV42byFLP4xldeHfbpMJAvCn5OSmndfRYSk7eR9UrMEXjQqrmI1wQYPRxAT0V7NdhiAbDc4rpL6vnV0-Xlrm8AFlVqEDkZbDBR9o3wKWnVqc4BLzKQFidyyeCFG0PcGecQ",
+                    "widthPx": 640,
+                    "heightPx": 360,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Alamine Hadrati",
+                            "uri": "https://maps.google.com/maps/contrib/109889165453240371061",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVv_bnmPqg7NOIPg4Cus51qgNyAcC04MO4ik_KYh-FvC8egKA=s100-p-k-no-mo"
+                        }
+                    ],
+                    "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDyw4CCTQ&hl=en-US",
+                    "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDyw4CCTQ!2e10!4m2!3m1!1s0x47e5e1c403a68c17:0x10b82c3688b2570"
+                },
+                {
+                    "name": "places/ChIJF4ymA8Th5UcRcCWLaMOCCwE/photos/AeeoHcJuLPgmAmaL3LUXMGV_Sc6OXbSNKjMg9zmYNXQiOKJB7aqTmoGsaWUJVr3BzLNju-YPcmkIAPWDsltA5JcenHVQasbOv_08y0e5gHI9dwMps-hTzcogztVi1wbatUrUxP6wVA3F_s7iIvhQlDgRIwwH6HOo9i2tzTvtrVJHcjy24kvRiM92NiClyTPzdowXFEJIa4gDvTQeGpEm6Mczsltyswk6P4t_EeN04xBdNcL2qYD4RAUqXKsfcsfJ--N3PqdD_2AoPsPVFROREEyMJTz-yBZk6bk4JHXAV9prj6eIqsG1Y5HlBgm_eiIb0YAeADadUEhaDNZ4NUJXU1qlqhlQu4xN5VhQeSh2s55J-MNJ3NXd3V0ZsEWk-3tPIUT1y4G56g66LfeeQiDxWzdfo3bEqqmJwtDKEoZbY0WI55a9QrA",
+                    "widthPx": 3000,
+                    "heightPx": 4000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Boumba Hugues Marlon",
+                            "uri": "https://maps.google.com/maps/contrib/104885302053109450890",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWLp3M4Plzv3AW8dLGh4khL1MGxwORezIRwG-EDlTp1y9TRdqo=s100-p-k-no-mo"
+                        }
+                    ],
+                    "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICBkOX8iQE&hl=en-US",
+                    "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICBkOX8iQE!2e10!4m2!3m1!1s0x47e5e1c403a68c17:0x10b82c3688b2570"
+                },
+                {
+                    "name": "places/ChIJF4ymA8Th5UcRcCWLaMOCCwE/photos/AeeoHcJ_FjYXRVPuc_nPNhVc5z-hBiPcmCWAoVUDLM4bkVq12vBrdG0ztxBxYvZVae9fIl0KVeXcRJbPMmFodILIHExr3rM3P_Eht50B9z6yRFuMsoAunosbfZI0rHbeI2CKlQdvuX-exLGwSt-XoDIuw-VPwWn7LFoWcn12Gu0RQkVTdB12ld9Q_Ox_TQda7hwxtpgYFxH7KeWfkysHjknYoUQEdiLzmYnBcqk-1zRVDGLo1jK8gaz2lYs2M9Z0WJfspJyY3iuV1Lz_PxuLw3VsQFeWbcaQ_ewqFiWXSycSswyavWHLXUYUi9DeQV-AEVLD-KDztY9RPAYGuigERY_w03DItrUcXwxM-QS-dwnzwiGPSklsyT--VWPq1yiye9ocg9cS0B4OZwOSMOqjA2Ot0CHa9HpLe7z8kn5CkNAt9HU",
+                    "widthPx": 2120,
+                    "heightPx": 1200,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Alamine Hadrati",
+                            "uri": "https://maps.google.com/maps/contrib/109889165453240371061",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVv_bnmPqg7NOIPg4Cus51qgNyAcC04MO4ik_KYh-FvC8egKA=s100-p-k-no-mo"
+                        }
+                    ],
+                    "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDyw8D6Bw&hl=en-US",
+                    "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDyw8D6Bw!2e10!4m2!3m1!1s0x47e5e1c403a68c17:0x10b82c3688b2570"
+                },
+                {
+                    "name": "places/ChIJF4ymA8Th5UcRcCWLaMOCCwE/photos/AeeoHcLKm4h-dqyyVODkAjiVxXrMMPsuxnx7TD5aFC4o_hyN0a_xxDAWenng0hjmr-7AuE6nR18XjV4ig7Fr-s3213Ja4Bfj2Ork7HI7tAZVswUw5cNuwkVNLb7dVL7Ljh0d3f9sII71-2Qx3jyagXOi9cBWwPFnddVd6VUJbLf9worbJvwL6jHW8f74x13UzogzssoWzdSGokEf9FvsNSUqShsdk75zDn6JA0sDMZXytIWSGpv1nVcyVltH6qLVbmW1nvA4WeyfXF8c9YhQwswqQfm1q_xtxq2MwXaWF3l0hqnitVAHhdAQmXsCuGbPbP6BFr_e9Oc0yoVOBEzVu9yeTfHkfUvXq-EN8-RCNKKIVY3AqTsZSoxUrfYtfIA2-QaSu_rtKlAG9_P4FOMMsR5nouLrjHarrT5gfUryZnKBX2c",
+                    "widthPx": 4000,
+                    "heightPx": 3000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "krishan amarasinghe",
+                            "uri": "https://maps.google.com/maps/contrib/117884257028029786769",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUlDRxPprIZy_BO3xpxtwhSK6IKngCaN7yWQYmjeASAvv3TbqI=s100-p-k-no-mo"
+                        }
+                    ],
+                    "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDO5Lj7Sg&hl=en-US",
+                    "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDO5Lj7Sg!2e10!4m2!3m1!1s0x47e5e1c403a68c17:0x10b82c3688b2570"
+                },
+                {
+                    "name": "places/ChIJF4ymA8Th5UcRcCWLaMOCCwE/photos/AeeoHcKjumuruH4fMoBKkWIsQMNzzZAgXle6v9gSyX9_cjJuswra-3igDuX986hUm4xSNUn4diOiY50NXSThgWx5-Rw4ui6510TkfUxHrduNs-14pP12lWFH45doFF1GGnvKI2y-dM6S-t3a-Hs26dVJ5A6r6474X71e7VmfX8-eFj1DmwBdMk5sdlzWUYpCnlOoalVzLPmxyCDQFkiaEOP745Zlpql_2--KbwxfNjWKe-pt6bigDc7dnm2fn754jr8Ihn2jaYgc74vdhY_QiRhEims0Lyzp9O8m7lBuAFpbUdGII_QGKYnJ7bJTtexy_Nys4ajj6kUDD95ZaWoMq3MIBEhJsWDuZykqDX1gnjAtUluWeuiW7D1HRYlFz13KhmuAjWljTtSDJ5Zbai8x1mEczW6gW4wbkdIt191kkIP4itPGVmY",
+                    "widthPx": 2448,
+                    "heightPx": 3264,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Local Guides Google",
+                            "uri": "https://maps.google.com/maps/contrib/101852962760405726873",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUu2OgUctyzz0W1JGJwHARDJaCRQ3Tpj9MY3iQQr3eVY0HG3Gw=s100-p-k-no-mo"
+                        }
+                    ],
+                    "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDym_SM9QE&hl=en-US",
+                    "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDym_SM9QE!2e10!4m2!3m1!1s0x47e5e1c403a68c17:0x10b82c3688b2570"
+                }
+            ],
+            "googleMapsLinks": {
+                "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x47e5e1c403a68c17:0x10b82c3688b2570!3e0",
+                "placeUri": "https://maps.google.com/?cid=75297594565928304",
+                "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x47e5e1c403a68c17:0x10b82c3688b2570!10e5"
+            },
+            "timeZone": {
+                "id": "Europe/Paris"
+            },
+            "title": "\"Discover Paris: City of Lights Adventure\""
+        },
+        "budget": 750,
+        "itinerary": [
+            {
+                "description_and_budget": {
+                    "day_number": 1,
+                    "day_description": "Essential items to bring for the trip: comfortable clothes, a light jacket, a universal adaptor, and medicine for any common ailments. This day focuses on your arrival in Paris, checking in at your hotel, enjoying a local lunch, exploring the Louvre Museum, and dining with a spectacular view of the Eiffel Tower. Expect a mix of iconic landmarks and fine French cuisine to begin your adventure.",
+                    "amount": 400,
+                    "lower_end_amount": 300,
+                    "higher_end_amount": 600
+                },
+                "date": "2025-04-18",
+                "activities": [
+                    {
+                        "title": "Flight from Singapore to Paris",
+                        "class": "transport",
+                        "type": "flight",
+                        "source_location": "Changi Airport, Singapore, Singapore",
+                        "source_location_airport_code": "SIN",
+                        "destination_location": "Paris Charles de Gaulle Airport, Paris, France",
+                        "destination_location_airport_code": "CDG",
+                        "description": "Taking an early morning flight from Singapore ensures maximum time upon arrival in Paris, giving you the afternoon to settle in and start exploring. This flight offers a comfortable journey with in-flight meals and entertainment, making long-distance travel more relaxing.",
+                        "time_frame_start": "07:00",
+                        "time_frame_end": "14:00",
+                        "ID": "transport_1",
+                        "selected": false,
+                        "cabin_class": "none",
+                        "max_connections": null,
+                        "date": "2025-04-18",
+                        "no_of_adults": null,
+                        "no_of_children": null
                     },
-                    "star_rating": null,
-                    "type_of_star_rating": "min",
-                    "sort_by": "distance",
-                    "date": "2025-04-08",
-                    "no_of_adults": null,
-                    "no_of_children": null,
-                    "no_of_nights": 3
-                },
-                {
-                    "title": "Hotel to Dinner",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Seventh Arrondissement, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Latin Quarter, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "Enjoy a short journey through Paris streets toward a charming bistro in the Latin Quarter. This quick transition allows you to take in the city’s ambiance while anticipating a delicious evening meal.",
-                    "time_frame_start": "18:45",
-                    "time_frame_end": "19:00",
-                    "ID": "transport_2",
-                    "selected": false,
-                    "date": "2025-04-08",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "French Bistro Dinner",
-                    "class": "restaurant",
-                    "type": "dinner",
-                    "search_location": "Latin Quarter, Paris, France",
-                    "description": "Savor your first night in Paris with an authentic French meal featuring classic dishes such as escargots, coq au vin, and crème brûlée. The bustling atmosphere highlights local culture, offering a warm, welcoming culinary experience.",
-                    "time_frame_start": "19:00",
-                    "time_frame_end": "20:00",
-                    "ID": "restaurant_1",
-                    "selected": false,
-                    "cuisine": [],
-                    "date": "2025-04-08",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Dinner to Event",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Latin Quarter, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Pigalle, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "Depart the delightful dinner location and make your way by car or taxi to Pigalle, a neighborhood known for its nightlife and entertainment scene. This short ride offers glimpses of Paris’s sparkling evening atmosphere.",
-                    "time_frame_start": "20:00",
-                    "time_frame_end": "20:30",
-                    "ID": "transport_3",
-                    "selected": false,
-                    "date": "2025-04-08",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Paris Evening Show",
-                    "class": "event",
-                    "type": "show",
-                    "search_location": "Pigalle, Paris, France",
-                    "description": "Experience an engaging cabaret or theatre performance that showcases the city’s storied artistic heritage. Revel in live music, captivating dance routines, and vibrant stage designs, immersing yourself in the iconic nightlife that defines Paris.",
-                    "time_frame_start": "20:30",
-                    "time_frame_end": "22:30",
-                    "ID": "event_1",
-                    "selected": false,
-                    "date": "2025-04-08",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Return to Hotel",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Pigalle, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Seventh Arrondissement, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "Conclude your first day by traveling back to your hotel. This late-night journey provides a moment to reflect on your initial impressions of Paris, preparing you for the adventures still to come.",
-                    "time_frame_start": "22:30",
-                    "time_frame_end": "23:00",
-                    "ID": "transport_4",
-                    "selected": false,
-                    "date": "2025-04-08",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                }
-            ]
-        },
-        {
-            "description_and_budget": {
-                "day_number": 2,
-                "day_description": "On this second day in Paris, discover iconic cultural landmarks and indulge in the city’s gastronomic delights. From the Louvre to the Eiffel Tower, explore famed attractions while relishing delicious meals and quintessential Parisian charm.",
-                "amount": 300,
-                "lower_end_amount": 250,
-                "higher_end_amount": 400
-            },
-            "date": "2025-04-09",
-            "activities": [
-                {
-                    "title": "Hotel to Breakfast",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Seventh Arrondissement, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Latin Quarter, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "Begin your day with a brief trip from your tranquil hotel to a bustling breakfast spot in the Latin Quarter. Observe Parisians starting their routines, offering insights into everyday local life.",
-                    "time_frame_start": "08:00",
-                    "time_frame_end": "08:15",
-                    "ID": "transport_5",
-                    "selected": false,
-                    "date": "2025-04-09",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Morning Café Treats",
-                    "class": "restaurant",
-                    "type": "breakfast",
-                    "search_location": "Latin Quarter, Paris, France",
-                    "description": "Delight in freshly baked croissants, warm baguettes, and a steaming café au lait at a charming Parisian café. Immerse yourself in the region’s classic flavors and soak up the morning atmosphere.",
-                    "time_frame_start": "08:15",
-                    "time_frame_end": "09:15",
-                    "ID": "restaurant_2",
-                    "selected": false,
-                    "cuisine": [],
-                    "date": "2025-04-09",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Café to Louvre",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Latin Quarter, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Louvre, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "Travel through the historic heart of Paris en route to the Louvre Museum. Passing iconic bridges and winding streets, this short drive exemplifies the grandeur and romance woven into the cityscape.",
-                    "time_frame_start": "09:15",
-                    "time_frame_end": "09:30",
-                    "ID": "transport_6",
-                    "selected": false,
-                    "date": "2025-04-09",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Explore the Louvre",
-                    "class": "attraction",
-                    "type": "tourist spot",
-                    "search_location": "Louvre, Paris, France",
-                    "description": "Marvel at the world’s largest art museum and a historic monument, featuring masterpieces such as the Mona Lisa. Wander through its vast halls, appreciate centuries of creative genius, and immerse yourself in priceless artifacts.",
-                    "time_frame_start": "09:30",
-                    "time_frame_end": "12:30",
-                    "ID": "attraction_1",
-                    "selected": false,
-                    "date": "2025-04-09",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Louvre to Lunch",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Louvre, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Tuileries, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "After exploring the museum’s treasures, head to a nearby eatery for midday nourishment. Enjoy the scenic views of the Tuileries area and the historic charm along the route to your lunch destination.",
-                    "time_frame_start": "12:30",
-                    "time_frame_end": "12:45",
-                    "ID": "transport_7",
-                    "selected": false,
-                    "date": "2025-04-09",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Classic French Lunch",
-                    "class": "restaurant",
-                    "type": "lunch",
-                    "search_location": "Tuileries, Paris, France",
-                    "description": "Indulge in a midday feast of French specialties, from onion soup to decadent quiches. Relax and recharge while admiring nearby gardens, savoring both the flavors on your plate and the city’s beauty.",
-                    "time_frame_start": "12:45",
-                    "time_frame_end": "13:45",
-                    "ID": "restaurant_3",
-                    "selected": false,
-                    "cuisine": [],
-                    "date": "2025-04-09",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Tuileries to Eiffel",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Tuileries, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Eiffel Tower, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "A brief journey along the Seine River leads you to the majestic Eiffel Tower. Enjoy glimpses of Paris’s skyline and soak in the romantic atmosphere as you approach the city’s iconic landmark.",
-                    "time_frame_start": "13:45",
-                    "time_frame_end": "14:00",
-                    "ID": "transport_8",
-                    "selected": false,
-                    "date": "2025-04-09",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Eiffel Tower Visit",
-                    "class": "attraction",
-                    "type": "tourist spot",
-                    "search_location": "Eiffel Tower, Paris, France",
-                    "description": "Ascend Europe’s most famous tower for sweeping panoramic views of Paris. Embrace the city’s rich history and architectural splendor, capturing photos from multiple levels, and creating lasting memories of this timeless monument.",
-                    "time_frame_start": "14:00",
-                    "time_frame_end": "16:00",
-                    "ID": "attraction_2",
-                    "selected": false,
-                    "date": "2025-04-09",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Eiffel to Boutique Stroll",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Eiffel Tower, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Champs-Élysées, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "Head toward the prestigious Champs-Élysées, passing grand boulevards brimming with high-end shops and cafés. This short ride sets the stage for an afternoon of leisurely browsing and soaking in Parisian sophistication.",
-                    "time_frame_start": "16:00",
-                    "time_frame_end": "16:15",
-                    "ID": "transport_9",
-                    "selected": false,
-                    "date": "2025-04-09",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Champs-Élysées Stroll",
-                    "class": "leisure",
-                    "type": "shopping",
-                    "search_location": "Champs-Élysées, Paris, France",
-                    "description": "A leisurely walk along this famed avenue offers an unforgettable taste of Parisian glamour. Browse luxury boutiques, relax at sidewalk cafés, and admire the Arc de Triomphe towering gracefully in the distance.",
-                    "time_frame_start": "16:15",
-                    "time_frame_end": "17:45",
-                    "ID": "leisure_2",
-                    "selected": false,
-                    "date": "2025-04-09",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Champs-Élysées to Dinner",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Champs-Élysées, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Montmartre, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "Transition to a neighborhood known for its artistic heritage and breathtaking views over Paris. This short trip provides a glimpse of local life as the sun begins to set over the city.",
-                    "time_frame_start": "17:45",
-                    "time_frame_end": "18:00",
-                    "ID": "transport_10",
-                    "selected": false,
-                    "date": "2025-04-09",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Scenic Montmartre Dinner",
-                    "class": "restaurant",
-                    "type": "dinner",
-                    "search_location": "Montmartre, Paris, France",
-                    "description": "Enjoy an evening meal overlooking the city’s twinkling skyline. Savor regional wines and inventive French cuisine, with a menu reflecting Montmartre’s bohemian spirit. Embrace the lively atmosphere and convivial spirit of this artistic quarter.",
-                    "time_frame_start": "18:00",
-                    "time_frame_end": "19:30",
-                    "ID": "restaurant_4",
-                    "selected": false,
-                    "cuisine": [],
-                    "date": "2025-04-09",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Return to Hotel",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Montmartre, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Seventh Arrondissement, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "Conclude your day by heading back to the hotel, reflecting on the magnificent sights experienced. This relaxing drive through Paris at night gives you one more chance to admire the illuminated landmarks.",
-                    "time_frame_start": "19:30",
-                    "time_frame_end": "20:00",
-                    "ID": "transport_11",
-                    "selected": false,
-                    "date": "2025-04-09",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                }
-            ]
-        },
-        {
-            "description_and_budget": {
-                "day_number": 3,
-                "day_description": "Your third day in Paris invites you to venture beyond the city center and experience more of its cultural pursuits, from exploring Versailles’ grandeur to enjoying an evening show in the vibrant Montparnasse district.",
-                "amount": 350,
-                "lower_end_amount": 300,
-                "higher_end_amount": 400
-            },
-            "date": "2025-04-10",
-            "activities": [
-                {
-                    "title": "Hotel to Versailles",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Seventh Arrondissement, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Palace of Versailles, Versailles, France",
-                    "destination_location_airport_code": "",
-                    "description": "Embark on a morning trip from central Paris to the opulent Palace of Versailles. Travel through suburban landscapes, experiencing a change of scenery before reaching the majestic residence of French royalty.",
-                    "time_frame_start": "08:00",
-                    "time_frame_end": "08:45",
-                    "ID": "transport_12",
-                    "selected": false,
-                    "date": "2025-04-10",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Palace Tour",
-                    "class": "attraction",
-                    "type": "tourist spot",
-                    "search_location": "Palace of Versailles, Versailles, France",
-                    "description": "Explore the Palace’s ornate rooms, including the famed Hall of Mirrors. Learn about French history and royal life as you stroll through lavish state apartments, gilded ceilings, and expansive formal gardens.",
-                    "time_frame_start": "08:45",
-                    "time_frame_end": "11:45",
-                    "ID": "attraction_3",
-                    "selected": false,
-                    "date": "2025-04-10",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Versailles to Lunch",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Palace of Versailles, Versailles, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Versailles Town, Versailles, France",
-                    "destination_location_airport_code": "",
-                    "description": "After your palace tour, head into the nearby town for a leisurely lunch. Observe the local atmosphere and charming storefronts, reflecting the slightly quieter side of life outside central Paris.",
-                    "time_frame_start": "11:45",
-                    "time_frame_end": "12:00",
-                    "ID": "transport_13",
-                    "selected": false,
-                    "date": "2025-04-10",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Lunch in Versailles",
-                    "class": "restaurant",
-                    "type": "lunch",
-                    "search_location": "Versailles Town, Versailles, France",
-                    "description": "Sample rustic French cuisine at a cozy local brasserie. Enjoy seasonal ingredients, fresh baguettes, and delightful pastries. The laid-back setting lends itself to relaxation after the morning’s deep dive into royal history.",
-                    "time_frame_start": "12:00",
-                    "time_frame_end": "13:00",
-                    "ID": "restaurant_5",
-                    "selected": false,
-                    "cuisine": [],
-                    "date": "2025-04-10",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Return to Paris",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Versailles Town, Versailles, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Montparnasse, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "Journey back into the city, arriving in the vibrant Montparnasse district. During this drive, notice how the scenery gradually transitions from Versailles’ regal calm to Paris’s energetic pulse and bustle.",
-                    "time_frame_start": "13:00",
-                    "time_frame_end": "14:00",
-                    "ID": "transport_14",
-                    "selected": false,
-                    "date": "2025-04-10",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Montparnasse Exploration",
-                    "class": "leisure",
-                    "type": "sightseeing",
-                    "search_location": "Montparnasse, Paris, France",
-                    "description": "Stroll through this lively area, once a hub for renowned artists and writers. Discover cafes, galleries, and truly unique shops, while soaking up its creative past and modern, cosmopolitan flair.",
-                    "time_frame_start": "14:00",
-                    "time_frame_end": "16:00",
-                    "ID": "leisure_3",
-                    "selected": false,
-                    "date": "2025-04-10",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Montparnasse to Show",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Montparnasse, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Montparnasse, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "Head to a nearby venue in Montparnasse to enjoy a captivating evening performance. This brief commute ensures you remain within the neighborhood’s artistic ambiance, transitioning seamlessly into a culturally rich night.",
-                    "time_frame_start": "16:00",
-                    "time_frame_end": "16:15",
-                    "ID": "transport_15",
-                    "selected": false,
-                    "date": "2025-04-10",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Montparnasse Evening Show",
-                    "class": "event",
-                    "type": "show",
-                    "search_location": "Montparnasse, Paris, France",
-                    "description": "Immerse yourself in Paris’s vibrant performing arts scene, with a show featuring live music or theatrical performances. Revel in the city’s creative energy, while sampling the district’s bohemian spirit and cultural heritage.",
-                    "time_frame_start": "16:15",
-                    "time_frame_end": "18:15",
-                    "ID": "event_2",
-                    "selected": false,
-                    "date": "2025-04-10",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Venue to Dinner",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Montparnasse, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Montparnasse, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "After the performance, remain in Montparnasse for a convenient transition to a local dining spot. A short journey ensures you can continue enjoying the atmosphere without losing precious evening time.",
-                    "time_frame_start": "18:15",
-                    "time_frame_end": "18:30",
-                    "ID": "transport_16",
-                    "selected": false,
-                    "date": "2025-04-10",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Cozy Montparnasse Dinner",
-                    "class": "restaurant",
-                    "type": "dinner",
-                    "search_location": "Montparnasse, Paris, France",
-                    "description": "Savor a leisurely dinner at a traditional French restaurant offering dishes like steak frites or duck confit. Bask in the inviting atmosphere, sharing the evening’s highlights with fellow travelers and locals alike.",
-                    "time_frame_start": "18:30",
-                    "time_frame_end": "20:00",
-                    "ID": "restaurant_6",
-                    "selected": false,
-                    "cuisine": [],
-                    "date": "2025-04-10",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Return to Hotel",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Montparnasse, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Seventh Arrondissement, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "Wrap up this culturally rich day by traveling back to your hotel. Reflect on the day’s explorations, from royal splendor in Versailles to avant-garde performances in Montparnasse, as Paris glitters around you.",
-                    "time_frame_start": "20:00",
-                    "time_frame_end": "20:30",
-                    "ID": "transport_17",
-                    "selected": false,
-                    "date": "2025-04-10",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                }
-            ]
-        },
-        {
-            "description_and_budget": {
-                "day_number": 4,
-                "day_description": "Your final day in Paris includes a last opportunity to explore local treasures before heading back to Singapore. Enjoy a relaxed morning, gather souvenirs, and cherish the city’s timeless elegance one last time.",
-                "amount": 700,
-                "lower_end_amount": 600,
-                "higher_end_amount": 800
-            },
-            "date": "2025-04-11",
-            "activities": [
-                {
-                    "title": "Hotel to Morning Stroll",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Seventh Arrondissement, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Le Marais, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "Begin your last day with a scenic ride to Le Marais. This vibrant district’s narrow streets and eclectic boutiques provide an ideal setting for a final taste of authentic Parisian life.",
-                    "time_frame_start": "08:00",
-                    "time_frame_end": "08:30",
-                    "ID": "transport_18",
-                    "selected": false,
-                    "date": "2025-04-11",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Final Marais Exploration",
-                    "class": "leisure",
-                    "type": "other",
-                    "search_location": "Le Marais, Paris, France",
-                    "description": "Wander this historic neighborhood known for its medieval charm, trendy art galleries, and boutique shops. Pick up last-minute souvenirs and enjoy street-side pastries while soaking in the distinctive ambiance of Paris’s chic quarter.",
-                    "time_frame_start": "08:30",
-                    "time_frame_end": "10:00",
-                    "ID": "leisure_4",
-                    "selected": false,
-                    "date": "2025-04-11",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Return to Hotel for Checkout",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Le Marais, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Seventh Arrondissement, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "Head back to your accommodation to prepare for departure. This short commute offers a final glimpse of central Paris, allowing you to bid farewell to the city’s iconic streets and timeless allure.",
-                    "time_frame_start": "10:00",
-                    "time_frame_end": "10:30",
-                    "ID": "transport_19",
-                    "selected": false,
-                    "date": "2025-04-11",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Hotel Check-Out",
-                    "class": "hotel",
-                    "type": "checkout",
-                    "search_location": "Seventh Arrondissement, Paris, France",
-                    "description": "Finish your stay by finalizing all arrangements at the hotel. Ensure you have all belongings secure and your travel documents ready for the journey home, leaving with cherished memories of your Parisian retreat.",
-                    "time_frame_start": "10:30",
-                    "time_frame_end": "11:00",
-                    "ID": "hotel_1",
-                    "selected": false,
-                    "amenities": [],
-                    "budget": {
-                        "min_price": null,
-                        "max_price": null
+                    {
+                        "title": "Taxi to Hotel",
+                        "class": "transport",
+                        "type": "road",
+                        "source_location": "Paris Charles de Gaulle Airport, Paris, France",
+                        "source_location_airport_code": "",
+                        "destination_location": "Marais, Paris, France",
+                        "destination_location_airport_code": "",
+                        "description": "Selecting a taxi from the airport is convenient and relatively quick, ensuring you can begin your adventure in Paris without delay. This door-to-door service helps you reach your accommodation swiftly, leaving more time for exploration and rest.",
+                        "time_frame_start": "14:00",
+                        "time_frame_end": "14:30",
+                        "ID": "transport_2",
+                        "selected": false,
+                        "date": "2025-04-18",
+                        "no_of_adults": null,
+                        "no_of_children": null
                     },
-                    "star_rating": null,
-                    "type_of_star_rating": "min",
-                    "sort_by": "distance",
-                    "date": "2025-04-11",
-                    "no_of_adults": null,
-                    "no_of_children": null
+                    {
+                        "title": "Hotel Check-In",
+                        "class": "hotel",
+                        "type": "checkin",
+                        "search_location": "Marais, Paris, France",
+                        "description": "Checking in at a stylish boutique hotel in the heart of Marais near central Paris offers an ideal location for sightseeing. The comfortable rooms provide a relaxing atmosphere after a long flight, ensuring you can rest well and be ready for your Parisian adventures. The staff is usually helpful and attentive, making your stay hassle-free.",
+                        "time_frame_start": "14:30",
+                        "time_frame_end": "15:00",
+                        "ID": "hotel_1",
+                        "selected": false,
+                        "amenities": [],
+                        "budget": {
+                            "min_price": null,
+                            "max_price": null
+                        },
+                        "star_rating": null,
+                        "type_of_star_rating": "exact",
+                        "sort_by": "price",
+                        "date": "2025-04-18",
+                        "no_of_adults": null,
+                        "no_of_children": null,
+                        "no_of_nights": 1
+                    },
+                    {
+                        "title": "French Lunch Delight",
+                        "class": "restaurant",
+                        "type": "lunch",
+                        "search_location": "Marais, Paris, France",
+                        "description": "Indulge in an authentic Parisian lunch at a charming bistro known for its classic dishes such as coq au vin and escargots. The cozy ambiance and fresh ingredients provide a memorable culinary experience, perfect for energizing you for the afternoon ahead. With multilingual waitstaff and a diverse menu, this restaurant caters to travelers with various preferences.",
+                        "time_frame_start": "15:00",
+                        "time_frame_end": "16:00",
+                        "ID": "restaurant_1",
+                        "selected": false,
+                        "cuisine": null,
+                        "date": "2025-04-18",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Louvre Museum Visit",
+                        "class": "attraction",
+                        "type": "tourist spot",
+                        "search_location": "Louvre Museum, Paris, France",
+                        "description": "One of the world’s largest and most famous museums, the Louvre houses iconic artworks like the Mona Lisa. Visiting late afternoon allows you to avoid the biggest crowds while exploring its vast collection of sculptures, paintings, and historical artifacts. This landmark is an essential Parisian experience, offering insight into centuries of European art and culture.",
+                        "time_frame_start": "16:00",
+                        "time_frame_end": "18:00",
+                        "ID": "attraction_1",
+                        "selected": false,
+                        "date": "2025-04-18",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Taxi to Eiffel Tower",
+                        "class": "transport",
+                        "type": "road",
+                        "source_location": "Louvre Museum, Paris, France",
+                        "source_location_airport_code": "",
+                        "destination_location": "Eiffel Tower, Paris, France",
+                        "destination_location_airport_code": "",
+                        "description": "Taking a quick taxi from the Louvre to the Eiffel Tower district is a convenient way to transition between major attractions. This short ride allows for scenic glimpses of central Paris, ensuring you maximize your limited time while comfortably traveling across the city.",
+                        "time_frame_start": "18:00",
+                        "time_frame_end": "18:30",
+                        "ID": "transport_3",
+                        "selected": false,
+                        "date": "2025-04-18",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Dinner with a View",
+                        "class": "restaurant",
+                        "type": "dinner",
+                        "search_location": "Eiffel Tower, Paris, France",
+                        "description": "Savor an elegant French dinner in a restaurant that offers a stunning view of the illuminated Eiffel Tower. The menu showcases refined regional cuisine, pairing exquisite sauces with high-quality ingredients. The ambiance is both romantic and lively, making this dinner an unforgettable highlight of your Paris experience.",
+                        "time_frame_start": "18:30",
+                        "time_frame_end": "19:30",
+                        "ID": "restaurant_2",
+                        "selected": false,
+                        "cuisine": null,
+                        "date": "2025-04-18",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Return to Hotel",
+                        "class": "transport",
+                        "type": "road",
+                        "source_location": "Eiffel Tower, Paris, France",
+                        "source_location_airport_code": "",
+                        "destination_location": "Marais, Paris, France",
+                        "destination_location_airport_code": "",
+                        "description": "Enjoy a relaxed drive back to your accommodation, giving you a final glimpse of the city lights. This short journey ensures you can retire comfortably for the evening and recharge for the next day.",
+                        "time_frame_start": "19:30",
+                        "time_frame_end": "20:00",
+                        "ID": "transport_4",
+                        "selected": false,
+                        "date": "2025-04-18",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    }
+                ]
+            },
+            {
+                "description_and_budget": {
+                    "day_number": 2,
+                    "day_description": "On your second day in Paris, immerse yourself in the city’s historic core around Notre Dame before exploring the stylish Champs-Élysées. From an authentic café breakfast to leisurely shopping, you’ll encounter diverse facets of Parisian culture. Finish at the Arc de Triomphe for a panoramic view, then prepare for your flight home.",
+                    "amount": 350,
+                    "lower_end_amount": 300,
+                    "higher_end_amount": 450
                 },
-                {
-                    "title": "Hotel to Airport",
-                    "class": "transport",
-                    "type": "road",
-                    "source_location": "Seventh Arrondissement, Paris, France",
-                    "source_location_airport_code": "",
-                    "destination_location": "Charles de Gaulle, Paris, France",
-                    "destination_location_airport_code": "",
-                    "description": "Travel to Charles de Gaulle airport, passing several notable Paris landmarks en route. This final drive through the city offers a chance to reflect on your favorite moments before bidding a fond adieu.",
-                    "time_frame_start": "11:00",
-                    "time_frame_end": "12:00",
-                    "ID": "transport_20",
-                    "selected": false,
-                    "date": "2025-04-11",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                },
-                {
-                    "title": "Flight to Singapore",
-                    "class": "transport",
-                    "type": "flight",
-                    "source_location": "Charles de Gaulle, Paris, France",
-                    "source_location_airport_code": "CDG",
-                    "destination_location": "Changi, Singapore, Singapore",
-                    "destination_location_airport_code": "SIN",
-                    "description": "Board your return flight and settle in for the journey to Singapore. Despite leaving Paris’s romance behind, you’ll carry home treasured memories of its culture, cuisine, and truly enchanting atmosphere.",
-                    "time_frame_start": "12:00",
-                    "time_frame_end": "23:00",
-                    "ID": "transport_21",
-                    "selected": false,
-                    "cabin_class": "none",
-                    "max_connections": null,
-                    "date": "2025-04-11",
-                    "no_of_adults": null,
-                    "no_of_children": null
-                }
-            ]
-        }
-    ]
+                "date": "2025-04-19",
+                "activities": [
+                    {
+                        "title": "Morning Ride to Notre Dame",
+                        "class": "transport",
+                        "type": "road",
+                        "source_location": "Marais, Paris, France",
+                        "source_location_airport_code": "",
+                        "destination_location": "Notre Dame, Paris, France",
+                        "destination_location_airport_code": "",
+                        "description": "Start your day with a short car ride from your hotel to the historic Notre Dame district, capturing an early morning glimpse of Parisian streets. Traveling by road ensures convenience and keeps the morning schedule flexible.",
+                        "time_frame_start": "08:00",
+                        "time_frame_end": "08:30",
+                        "ID": "transport_5",
+                        "selected": false,
+                        "date": "2025-04-19",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Café Breakfast by the Cathedral",
+                        "class": "restaurant",
+                        "type": "breakfast",
+                        "search_location": "Notre Dame, Paris, France",
+                        "description": "Enjoy a traditional French breakfast at a café near the iconic Notre Dame, sampling freshly baked croissants, baguettes, and aromatic coffee. This early meal provides a pleasant start to your day of sightseeing, immersing you in the local café culture with morning views of the historic cathedral.",
+                        "time_frame_start": "08:30",
+                        "time_frame_end": "09:30",
+                        "ID": "restaurant_3",
+                        "selected": false,
+                        "cuisine": null,
+                        "date": "2025-04-19",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Notre Dame Stroll",
+                        "class": "attraction",
+                        "type": "tourist spot",
+                        "search_location": "Notre Dame, Paris, France",
+                        "description": "Although partially closed for renovation, the surroundings of Notre Dame and the neighboring Latin Quarter remain a must-see. Walk around the cathedral’s exterior, admire the intricate Gothic architecture, and soak in the lively atmosphere of the café-lined streets. This enriching stroll highlights Paris's storied religious and cultural heritage.",
+                        "time_frame_start": "09:30",
+                        "time_frame_end": "11:00",
+                        "ID": "attraction_2",
+                        "selected": false,
+                        "date": "2025-04-19",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Metro to Champs-Élysées",
+                        "class": "transport",
+                        "type": "other",
+                        "source_location": "Notre Dame, Paris, France",
+                        "source_location_airport_code": "",
+                        "destination_location": "Champs-Élysées, Paris, France",
+                        "destination_location_airport_code": "",
+                        "description": "Taking the Paris Métro from Notre Dame to the Champs-Élysées is both efficient and budget-friendly. This journey lets you experience Parisian daily life as you share a ride with locals, enjoying quick transfers and minimal wait times while traveling beneath the city's famous boulevards.",
+                        "time_frame_start": "11:00",
+                        "time_frame_end": "11:30",
+                        "ID": "transport_6",
+                        "selected": false,
+                        "date": "2025-04-19",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Stylish Lunch on Champs-Élysées",
+                        "class": "restaurant",
+                        "type": "lunch",
+                        "search_location": "Champs-Élysées, Paris, France",
+                        "description": "Season your midday break with iconic Parisian flair at a contemporary café or brasserie along the Champs-Élysées. The menu offers a range of French classics, from savory crepes to mouthwatering steak frites, all complemented by lively sidewalk seating. Perfect for people-watching and fueling up before further exploration.",
+                        "time_frame_start": "11:30",
+                        "time_frame_end": "12:30",
+                        "ID": "restaurant_4",
+                        "selected": false,
+                        "cuisine": null,
+                        "date": "2025-04-19",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Champs-Élysées Shopping",
+                        "class": "leisure",
+                        "type": "shopping",
+                        "search_location": "Champs-Élysées, Paris, France",
+                        "description": "Explore the luxurious boutiques, high-street stores, and flagship brands along the Champs-Élysées. This renowned shopping avenue caters to a wide range of styles, ensuring you find unique souvenirs and fashion statements. Strolling here combines consumer excitement with the charm of Parisian architecture, offering a quintessential city experience.",
+                        "time_frame_start": "12:30",
+                        "time_frame_end": "14:30",
+                        "ID": "leisure_1",
+                        "selected": false,
+                        "date": "2025-04-19",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Arc de Triomphe Exploration",
+                        "class": "attraction",
+                        "type": "tourist spot",
+                        "search_location": "Arc de Triomphe, Paris, France",
+                        "description": "No visit to the Champs-Élysées is complete without pausing at the Arc de Triomphe. Ascend to the top for panoramic views of Paris, and reflect on the monument's significance to French national identity. The intricate sculptures and grand structure pay homage to heroic individuals and moments in history.",
+                        "time_frame_start": "14:30",
+                        "time_frame_end": "15:30",
+                        "ID": "attraction_3",
+                        "selected": false,
+                        "date": "2025-04-19",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Drive back to Hotel",
+                        "class": "transport",
+                        "type": "road",
+                        "source_location": "Arc de Triomphe, Paris, France",
+                        "source_location_airport_code": "",
+                        "destination_location": "Marais, Paris, France",
+                        "destination_location_airport_code": "",
+                        "description": "Take a comfortable ride back to your hotel for a brief respite and to prepare for checkout. Using a private car or rideshare app ensures a swift journey, saving time for any final packing tasks or refreshment.",
+                        "time_frame_start": "15:30",
+                        "time_frame_end": "16:00",
+                        "ID": "transport_7",
+                        "selected": false,
+                        "date": "2025-04-19",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Hotel Check-Out",
+                        "class": "hotel",
+                        "type": "checkout",
+                        "search_location": "Marais, Paris, France",
+                        "description": "Completing the checkout process ensures you are ready to depart for the airport or continue exploring without returning to the hotel. The front desk staff can assist with any final payments, luggage storage, or transportation bookings, allowing for a smooth farewell to your temporary Parisian home.",
+                        "time_frame_start": "16:00",
+                        "time_frame_end": "16:30",
+                        "ID": "hotel_1",
+                        "selected": false,
+                        "amenities": [],
+                        "budget": {
+                            "min_price": null,
+                            "max_price": null
+                        },
+                        "star_rating": null,
+                        "type_of_star_rating": "exact",
+                        "sort_by": "price",
+                        "date": "2025-04-19",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    },
+                    {
+                        "title": "Flight Back to Singapore",
+                        "class": "transport",
+                        "type": "flight",
+                        "source_location": "Marais, Paris, France",
+                        "source_location_airport_code": "CDG",
+                        "destination_location": "Changi Airport, Singapore, Singapore",
+                        "destination_location_airport_code": "SIN",
+                        "description": "Depart directly from your hotel area, traveling by a pre-booked transfer to Charles de Gaulle Airport before boarding your flight back to Singapore. This seamless arrangement helps you avoid navigating public transport with luggage, plus enjoy in-flight comforts such as meals, entertainment, and opportunities for rest. Conclude your two-day Paris adventure in a smooth and efficient manner.",
+                        "time_frame_start": "16:30",
+                        "time_frame_end": "06:00",
+                        "ID": "transport_8",
+                        "selected": false,
+                        "cabin_class": "none",
+                        "max_connections": null,
+                        "date": "2025-04-19",
+                        "no_of_adults": null,
+                        "no_of_children": null
+                    }
+                ]
+            }
+        ]
+    }
 }
