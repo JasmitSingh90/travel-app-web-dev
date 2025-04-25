@@ -126,4 +126,5 @@ class ChatImageAssets {
   static const String dottedLineImg = '${assetHomeModulePath}dotted_line.svg';
   static const String kMultitaskImg = '${assetHomeModulePath}multitask_img.png';
   static const String kTravelImg = '${assetHomeModulePath}travel_img.png';
+  static const String ticketmaster = '${assetHomeModulePath}ticketmaster.png';
 }
