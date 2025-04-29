@@ -2,58 +2,41 @@
 <html>
 
 <head>
-  <script src="assets/packages/vad/assets/ort.js"></script>
+    <script src="assets/packages/vad/assets/ort.js"></script>
 
-  <base href="./">
-  <!-- <base href="/travel-app-web-dev/"> -->
+    <base href="./">
+    <!-- <base href="/travel-app-web-dev/"> -->
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta content="A new Flutter project." name="description">
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta content="A new Flutter project." name="description">
 
-  <!-- iOS meta tags & icons -->
-  <meta content="719221376180-do7vc0l2s5so64anp2sop3o7gb80drtk.apps.googleusercontent.com"
-    name="google-signin-client_id">
-  <meta content="yes" name="apple-mobile-web-app-capable">
-  <meta content="black" name="apple-mobile-web-app-status-bar-style">
-  <meta content="costartravel" name="apple-mobile-web-app-title">
-  <link href="icons/Icon-192.png" rel="apple-touch-icon">
+    <!-- iOS meta tags & icons -->
+    <meta content="719221376180-do7vc0l2s5so64anp2sop3o7gb80drtk.apps.googleusercontent.com"
+        name="google-signin-client_id">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="costartravel" name="apple-mobile-web-app-title">
+    <link href="icons/Icon-192.png" rel="apple-touch-icon">
 
-  <!-- Favicon -->
-  <link href="favicon.png" rel="icon" type="image/png" />
+    <!-- Favicon -->
+    <link href="favicon.png" rel="icon" type="image/png" />
 
-  <title>CO* Travel</title>
-  <link href="manifest.json" rel="manifest">
+    <title>CO* Travel</title>
+    <link href="manifest.json" rel="manifest">
 
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "2420995754";
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script defer src="flutter.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3L_Q5K4H_gMo4_6zxL_XYObKMEQc33PM"></script>
-  <script type="text/javascript"> window.flutterWebRenderer = "html";
-  </script>
+    <script>
+        const serviceWorkerVersion = "916161093";
+    </script>
+    <!-- This script adds the flutter initialization JS code -->
+    <script defer src="flutter.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3L_Q5K4H_gMo4_6zxL_XYObKMEQc33PM"></script>
 </head>
 
 <body>
-  <script defer src="assets/packages/vad/assets/bundle.min.js"></script>
-  <script defer src="assets/packages/vad/assets/vad_web.js"></script>
-  <script>
-    window.addEventListener('load', function (ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function (engineInitializer) {
-          engineInitializer.initializeEngine().then(function (appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
+    <script defer src="assets/packages/vad/assets/bundle.min.js"></script>
+    <script defer src="assets/packages/vad/assets/vad_web.js"></script>
+    <script async src="flutter_bootstrap.js"></script>
 </body>
 
 </html>

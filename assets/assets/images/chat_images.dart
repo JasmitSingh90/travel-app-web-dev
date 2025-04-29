@@ -127,4 +127,7 @@ class ChatImageAssets {
   static const String kMultitaskImg = '${assetHomeModulePath}multitask_img.png';
   static const String kTravelImg = '${assetHomeModulePath}travel_img.png';
   static const String ticketmaster = '${assetHomeModulePath}ticketmaster.png';
+  static const String miniArrowRight =
+      '${assetHomeModulePath}mini-arrow-right.png';
+  static const String applePayLogo = '${assetHomeModulePath}apple-pay-logo.png';
 }
