@@ -3,11 +3,11 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "2163586e27b982b42824a58ad621bb35",
+const RESOURCES = {"flutter_bootstrap.js": "802ee8da82013f0199b24716d0194cad",
 "version.json": "0e6efcb0dddef3d83d518224fa138913",
 "index.html": "8999e9885ac815ac95e744997924a933",
 "/": "8999e9885ac815ac95e744997924a933",
-"main.dart.js": "d648050108915a6c8f1691f56284ce38",
+"main.dart.js": "d7f1b1b61295833b03f7c7cacdd784fc",
 "flutter.js": "f393d3c16b631f36852323de8e583132",
 "favicon.png": "946cded120674fc2dc184174af84a7e9",
 "icons/Icon-192.png": "63343ada61c2f41d27f13a01e4eb01ab",
@@ -36,7 +36,7 @@ const RESOURCES = {"flutter_bootstrap.js": "2163586e27b982b42824a58ad621bb35",
 "assets/packages/vad/assets/ort-wasm-simd.wasm": "49460a4b3ff6631a5475ff4e53ac5404",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
 "assets/AssetManifest.bin": "808f470f99c36b5bba0094ad05421dcb",
-"assets/fonts/MaterialIcons-Regular.otf": "0b7047096d107f7750da25240c632ebd",
+"assets/fonts/MaterialIcons-Regular.otf": "4b95be9b3f98327faca30e860d663313",
 "assets/assets/images/chat_camera_image.svg": "13537106679ddfb3f23d43589ab93b53",
 "assets/assets/images/room_bg.png": "3ac523b7d4121144f6988754fc60d496",
 "assets/assets/images/transport_loading_2.png": "ab9a058499b0940303f5c8c803873daa",
