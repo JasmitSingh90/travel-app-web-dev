@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <base href="/travel-app-web-dev/">
+    <base href="./">
     <!-- <base href="/travel-app-web-dev/"> -->
 
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <meta content="CoStar Travel" name="description">
 
     <meta content="173702795602-9f1m0hd81bu18ai40katllskihaimlve.apps.googleusercontent.com"
-          name="google-signin-client_id">
+        name="google-signin-client_id">
 
     <!-- iOS meta tags & icons -->
     <meta content="yes" name="apple-mobile-web-app-capable">
@@ -24,19 +24,18 @@
     <meta content="transparent" name="theme-color">
 
     <!-- Favicon -->
-    <link href="favicon.png" rel="icon" type="image/png"/>
+    <link href="favicon.png" rel="icon" type="image/png" />
 
     <!-- Preload splash images with mobile priority -->
-    <link as="image" href="assets/assets/images/login_landing_bg.png" media="(max-width: 768px)"
-          rel="preload">
-    <link as="image" href="assets/assets/images/login_web.webp" media="(min-width: 769px)"
-          rel="preload">
+    <link as="image" href="assets/assets/images/login_landing_bg.png" media="(max-width: 768px)" rel="preload">
+    <link as="image" href="assets/assets/images/login_web.webp" media="(min-width: 769px)" rel="preload">
 
     <title>CO* Travel</title>
     <link href="manifest.json" rel="manifest">
 
     <style>
-        body, html {
+        body,
+        html {
             margin: 0;
             padding: 0;
             height: 100%;
@@ -60,6 +59,7 @@
                 opacity: 0.7;
                 transform: scale(1);
             }
+
             to {
                 opacity: 1;
                 transform: scale(1.05);
@@ -95,55 +95,55 @@
             e.preventDefault();
         });
 
-    function hideSplashScreen() {
-        const splashScreen = document.getElementById('splash-screen');
-        if (splashScreen) {
-            splashScreen.classList.add('hidden');
-            setTimeout(() => {
-                splashScreen.remove();
-            }, 500); // Wait for transition to finish
-        }
-    }
-
-    function preloadImages() {
-        // Images are now preloaded via link tags in head
-        // This function kept for compatibility but simplified
-        const mobileImg = new Image();
-        const desktopImg = new Image();
-        mobileImg.src = 'assets/assets/images/login_landing_bg.png';
-        desktopImg.src = 'assets/assets/images/login_web.webp';
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-        // More robust mobile detection
-        const isMobile = window.innerWidth <= 768 ||
-                         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
-                         ('ontouchstart' in window) ||
-                         (navigator.maxTouchPoints > 0);
-
-        // Only switch to desktop if clearly on desktop
-        if (!isMobile && window.innerWidth > 768) {
+        function hideSplashScreen() {
             const splashScreen = document.getElementById('splash-screen');
             if (splashScreen) {
-                splashScreen.style.backgroundImage = "url('assets/assets/images/login_web.webp')";
-                console.log('Switched to desktop background');
+                splashScreen.classList.add('hidden');
+                setTimeout(() => {
+                    splashScreen.remove();
+                }, 500); // Wait for transition to finish
             }
-        } else {
-            console.log('Keeping mobile background, isMobile:', isMobile, 'width:', window.innerWidth);
         }
 
-        preloadImages();
+        function preloadImages() {
+            // Images are now preloaded via link tags in head
+            // This function kept for compatibility but simplified
+            const mobileImg = new Image();
+            const desktopImg = new Image();
+            mobileImg.src = 'assets/assets/images/login_landing_bg.png';
+            desktopImg.src = 'assets/assets/images/login_web.webp';
+        }
 
-        window.addEventListener('flutter-first-frame', hideSplashScreen);
+        document.addEventListener('DOMContentLoaded', function () {
+            // More robust mobile detection
+            const isMobile = window.innerWidth <= 768 ||
+                /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+                ('ontouchstart' in window) ||
+                (navigator.maxTouchPoints > 0);
 
-        setTimeout(hideSplashScreen, 10000);
-    });
+            // Only switch to desktop if clearly on desktop
+            if (!isMobile && window.innerWidth > 768) {
+                const splashScreen = document.getElementById('splash-screen');
+                if (splashScreen) {
+                    splashScreen.style.backgroundImage = "url('assets/assets/images/login_web.webp')";
+                    console.log('Switched to desktop background');
+                }
+            } else {
+                console.log('Keeping mobile background, isMobile:', isMobile, 'width:', window.innerWidth);
+            }
+
+            preloadImages();
+
+            window.addEventListener('flutter-first-frame', hideSplashScreen);
+
+            setTimeout(hideSplashScreen, 10000);
+        });
     </script>
 </head>
 
 <body>
-<!-- Splash Screen with inline mobile-first styling to prevent any flash -->
-<div id="splash-screen" style="
+    <!-- Splash Screen with inline mobile-first styling to prevent any flash -->
+    <div id="splash-screen" style="
     position: fixed;
     top: 0;
     left: 0;
@@ -162,13 +162,13 @@
     transition: opacity 0.5s ease-in-out;
     overflow: hidden;
 ">
-    <div id="loading-text">LOADING...</div>
-</div>
+        <div id="loading-text">LOADING...</div>
+    </div>
 
-<script defer src="assets/packages/vad/assets/ort.js"></script>
-<script defer src="assets/packages/vad/assets/bundle.min.js"></script>
-<script defer src="assets/packages/vad/assets/vad_web.js"></script>
-<script async src="flutter_bootstrap.js?v=78"></script>
+    <script defer src="assets/packages/vad/assets/ort.js"></script>
+    <script defer src="assets/packages/vad/assets/bundle.min.js"></script>
+    <script defer src="assets/packages/vad/assets/vad_web.js"></script>
+    <script async src="flutter_bootstrap.js?v=83"></script>
 </body>
 
 </html>
