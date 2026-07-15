@@ -590,6 +590,7 @@
     "guest_count": "{} Gast",
     "guest_name": "Naam gast",
     "lead_guest_name": "Naam hoofdgast",
+    "confirming_booking_hint": "Dit duurt maar even.",
     "guests_count": "{} Gasten",
     "guests_loved": "Gasten die hier verbleven waren dol op",
     "hey_name": "Hallo, {}",

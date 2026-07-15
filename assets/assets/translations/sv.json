@@ -590,6 +590,7 @@
     "guest_count": "{} Gäst",
     "guest_name": "Gästens namn",
     "lead_guest_name": "Huvudgästens namn",
+    "confirming_booking_hint": "Det tar bara ett ögonblick.",
     "guests_count": "{} Gäster",
     "guests_loved": "Gäster som bott här älskade",
     "hey_name": "Hej, {}",

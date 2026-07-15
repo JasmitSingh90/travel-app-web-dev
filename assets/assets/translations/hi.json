@@ -590,6 +590,7 @@
     "guest_count": "{} अतिथि",
     "guest_name": "अतिथि का नाम",
     "lead_guest_name": "मुख्य अतिथि का नाम",
+    "confirming_booking_hint": "इसमें बस कुछ ही क्षण लगेंगे।",
     "guests_count": "{} अतिथि",
     "guests_loved": "यहां ठहरे मेहमानों को पसंद आया",
     "hey_name": "नमस्ते, {}",

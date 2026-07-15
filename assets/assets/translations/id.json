@@ -590,6 +590,7 @@
     "guest_count": "{} Tamu",
     "guest_name": "Nama tamu",
     "lead_guest_name": "Nama tamu utama",
+    "confirming_booking_hint": "Ini hanya akan memakan waktu sebentar.",
     "guests_count": "{} Tamu",
     "guests_loved": "Tamu yang menginap di sini menyukai",
     "hey_name": "Hai, {}",

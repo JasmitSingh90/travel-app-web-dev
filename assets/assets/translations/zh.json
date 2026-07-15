@@ -590,6 +590,7 @@
     "guest_count": "{} 客人",
     "guest_name": "客人姓名",
     "lead_guest_name": "主要客人姓名",
+    "confirming_booking_hint": "这只需片刻。",
     "guests_count": "{} 客人",
     "guests_loved": "入住过的客人喜爱",
     "hey_name": "您好，{}",

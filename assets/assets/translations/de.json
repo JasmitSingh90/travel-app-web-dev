@@ -590,6 +590,7 @@
     "guest_count": "{} Gast",
     "guest_name": "Name des Gastes",
     "lead_guest_name": "Name des Hauptgastes",
+    "confirming_booking_hint": "Das dauert nur einen Moment.",
     "guests_count": "{} Gäste",
     "guests_loved": "Gäste, die hier übernachtet haben, liebten",
     "hey_name": "Hallo, {}",
