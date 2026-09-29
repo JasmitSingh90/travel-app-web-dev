@@ -143,6 +143,20 @@
             e.preventDefault();
         });
 
+        // Browser zoom via Ctrl/Cmd + mouse wheel (and trackpad pinch). The
+        // Flutter web engine turns every wheel event that carries ctrlKey into
+        // an in-app scale gesture and calls preventDefault on it, so the browser
+        // never zooms the page; only the keyboard shortcuts (Ctrl/Cmd +/-) work.
+        // Nothing in this app consumes that gesture on the main screens, so stop
+        // the event in the capture phase before it reaches the Flutter view: the
+        // engine never sees it, nothing prevents the default, and the browser
+        // zooms as on any other page. Plain wheel (scrolling) is untouched.
+        window.addEventListener('wheel', (e) => {
+            if (e.ctrlKey) {
+                e.stopImmediatePropagation();
+            }
+        }, { capture: true, passive: true });
+
         function hideSplashScreen() {
             const splashScreen = document.getElementById('splash-screen');
             if (splashScreen) {
@@ -218,10 +232,22 @@
         </div>
     </div>
 
-    <script defer src="assets/packages/vad/assets/ort.js"></script>
-    <script defer src="assets/packages/vad/assets/bundle.min.js"></script>
-    <script defer src="assets/packages/vad/assets/vad_web.js"></script>
-    <script async src="flutter_bootstrap.js?v=15"></script>
+    <!-- The vad: 0.0.8 pub package does NOT ship web JS assets — Travel
+         bundles them locally under `assets/vad/` (declared in pubspec.yaml).
+         Flutter serves app-declared assets at `assets/<path>`, so the
+         correct URLs are `assets/assets/vad/...`, NOT
+         `assets/packages/vad/assets/...` (that pub-package path only works
+         when the package itself declares its own assets — which vad 0.0.8
+         does not).
+         Without these three globals (`ort`, `vad`, `vadweb`) loaded, the
+         Dart vad package fails with "type 'Null' is not a subtype of type
+         'JSObject'" at silero_v5_model.dart:46 because `ort.env` is null.
+         Keep `defer` and put flutter_bootstrap last so all four scripts run
+         in document order — guarantees `ort` exists before Dart touches it. -->
+    <script defer src="assets/assets/vad/ort.js"></script>
+    <script defer src="assets/assets/vad/bundle.min.js"></script>
+    <script defer src="assets/assets/vad/vad_web.js"></script>
+    <script defer src="flutter_bootstrap.js?v=18"></script>
 </body>
 
 </html>
