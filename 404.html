@@ -3,14 +3,14 @@
 
 <head>
     <base href="/travel-app-web-dev/">
-    <!-- <base href="/travel-app-web-dev/"> -->
 
     <meta charset="UTF-8">
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
     <meta content="CoStar Travel" name="description">
 
-    <meta content="173702795602-9f1m0hd81bu18ai40katllskihaimlve.apps.googleusercontent.com"
-        name="google-signin-client_id">
+    <!-- iOS meta tags & icons -->
+    <meta content="719221376180-do7vc0l2s5so64anp2sop3o7gb80drtk.apps.googleusercontent.com"
+          name="google-signin-client_id">
 
     <!-- iOS meta tags & icons -->
     <meta content="yes" name="apple-mobile-web-app-capable">
@@ -24,11 +24,13 @@
     <meta content="transparent" name="theme-color">
 
     <!-- Favicon -->
-    <link href="favicon.png" rel="icon" type="image/png" />
+    <link href="favicon.png" rel="icon" type="image/png"/>
 
     <!-- Preload splash images with mobile priority -->
-    <link as="image" href="assets/assets/images/login_landing_bg.png" media="(max-width: 768px)" rel="preload">
-    <link as="image" href="assets/assets/images/login_web.webp" media="(min-width: 769px)" rel="preload">
+    <link as="image" href="assets/assets/images/login_landing_bg.png" media="(max-width: 768px)"
+          rel="preload">
+    <link as="image" href="assets/assets/images/login_web.webp" media="(min-width: 769px)"
+          rel="preload">
 
     <title>CO* Travel</title>
     <link href="manifest.json" rel="manifest">
@@ -42,6 +44,31 @@
             overflow: hidden;
             -webkit-text-size-adjust: 100%;
             -ms-text-size-adjust: 100%;
+        }
+
+        /* Pinch-to-zoom on touch screens. The Flutter engine puts an inline
+           `touch-action: none` on <body>, so the browser never zooms and
+           hands both fingers of a pinch to the app, where every scrollable
+           under them jumps up and down. `pinch-zoom` gives the pinch back to
+           the browser (it cancels the app's pointers when it takes over)
+           while one-finger drags still reach Flutter. Once the page is
+           really magnified (class set by the script below) a one-finger drag
+           pans it, like any zoomed web page; pinch back out to scroll the
+           app again. */
+        body {
+            touch-action: pinch-zoom !important;
+        }
+
+        html.page-zoomed body {
+            touch-action: pan-x pan-y pinch-zoom !important;
+        }
+
+        /* With accessibility on, the engine also sets an inline
+           `touch-action: none` on every scrollable semantics node, which
+           blocks the pinch over exactly the scrollable areas. Panning stays
+           off there in both states: the app scrolls those nodes itself. */
+        flt-semantics[style*="touch-action"] {
+            touch-action: pinch-zoom !important;
         }
 
         .loading-container {
@@ -143,19 +170,143 @@
             e.preventDefault();
         });
 
-        // Browser zoom via Ctrl/Cmd + mouse wheel (and trackpad pinch). The
-        // Flutter web engine turns every wheel event that carries ctrlKey into
-        // an in-app scale gesture and calls preventDefault on it, so the browser
-        // never zooms the page; only the keyboard shortcuts (Ctrl/Cmd +/-) work.
-        // Nothing in this app consumes that gesture on the main screens, so stop
-        // the event in the capture phase before it reaches the Flutter view: the
-        // engine never sees it, nothing prevents the default, and the browser
-        // zooms as on any other page. Plain wheel (scrolling) is untouched.
-        window.addEventListener('wheel', (e) => {
-            if (e.ctrlKey) {
-                e.stopImmediatePropagation();
+        // Second half of pinch-to-zoom (see the `touch-action` rules above).
+        // The Flutter engine sizes its view from visualViewport.width/height
+        // and multiplies the device pixel ratio by visualViewport.scale, so
+        // the moment the browser magnifies the page the app lays itself out
+        // again for a window of width/zoom x height/zoom logical pixels:
+        // overflow stripes, a blank strip, content pushed out of view. Report
+        // the un-magnified viewport instead, so the layout stays put and the
+        // browser magnifies the rendered page. While the page is not zoomed
+        // in, the native values pass through untouched (keyboard resize,
+        // rotation, and "desktop site" mode where the scale is below 1).
+        (function () {
+            const viewport = window.visualViewport;
+            if (!viewport) {
+                return;
             }
-        }, { capture: true, passive: true });
+            const proto = Object.getPrototypeOf(viewport);
+            const native = {};
+            for (const name of ['width', 'height', 'scale']) {
+                const descriptor = Object.getOwnPropertyDescriptor(proto, name);
+                if (!descriptor || !descriptor.get) {
+                    return;
+                }
+                native[name] = () => descriptor.get.call(viewport);
+            }
+
+            // From this zoom level a one-finger drag pans the page instead of
+            // reaching the app. Below it the app stays fully usable, so a
+            // slight accidental pinch does not leave its lists unscrollable.
+            const panFromZoom = 1.1;
+
+            const zoom = () => {
+                const scale = native.scale();
+                return scale > 1.001 ? scale : 1;
+            };
+
+            // size * zoom is the un-magnified size up to rounding noise; snap
+            // to the last size read at rest so the engine sees no change at
+            // all, unless the viewport really changed while zoomed.
+            const unmagnified = (name) => {
+                let atRest = native[name]();
+                return () => {
+                    const size = native[name]();
+                    const factor = zoom();
+                    if (factor === 1) {
+                        atRest = size;
+                        return size;
+                    }
+                    const scaled = size * factor;
+                    return Math.abs(scaled - atRest) < 0.5 ? atRest : scaled;
+                };
+            };
+
+            const width = unmagnified('width');
+            const height = unmagnified('height');
+            Object.defineProperty(viewport, 'width', { configurable: true, get: width });
+            Object.defineProperty(viewport, 'height', { configurable: true, get: height });
+            Object.defineProperty(viewport, 'scale', {
+                configurable: true,
+                get: () => native.scale() / zoom(),
+            });
+
+            const syncZoomState = () => {
+                width();
+                height();
+                document.documentElement.classList.toggle(
+                    'page-zoomed', zoom() >= panFromZoom);
+            };
+            viewport.addEventListener('resize', syncZoomState);
+            syncZoomState();
+        })();
+
+        // Third part of pinch-to-zoom. Chrome on Android zooms on a pinch
+        // that starts at normal size without cancelling the page's pointers
+        // (measured on a Redmi, Chrome 153: 44 pointermoves reached the app
+        // during a single zoom), so the app would keep scrolling under the
+        // fingers while the page zooms. A gesture with two or more fingers
+        // belongs to the browser: cancel the finger the app already knows
+        // about and keep the rest of that gesture away from the engine.
+        // Platform views (maps) handle their own touches and are left alone.
+        (function () {
+            let pinching = false;
+            const known = new Map();
+
+            const insidePlatformView = (event) => event.composedPath().some(
+                (node) => node.localName === 'flt-platform-view');
+
+            const cancel = (pointerId, last) => {
+                last.target.dispatchEvent(new PointerEvent('pointercancel', {
+                    pointerId: pointerId,
+                    pointerType: 'touch',
+                    isPrimary: last.isPrimary,
+                    clientX: last.x,
+                    clientY: last.y,
+                    bubbles: true,
+                    composed: true,
+                }));
+            };
+
+            const onTouchPointer = (event) => {
+                // Untrusted events are the cancels dispatched above.
+                if (event.pointerType !== 'touch' || !event.isTrusted ||
+                    insidePlatformView(event)) {
+                    return;
+                }
+                if (event.type === 'pointerdown') {
+                    // The first finger of a gesture: whatever was left over
+                    // from the previous one no longer applies.
+                    if (event.isPrimary) {
+                        pinching = false;
+                        known.clear();
+                    }
+                    if (!pinching && known.size > 0) {
+                        pinching = true;
+                        known.forEach((last, pointerId) => cancel(pointerId, last));
+                        known.clear();
+                    }
+                }
+                if (pinching) {
+                    event.stopImmediatePropagation();
+                    return;
+                }
+                if (event.type === 'pointerup' || event.type === 'pointercancel') {
+                    known.delete(event.pointerId);
+                } else {
+                    known.set(event.pointerId, {
+                        target: event.target,
+                        isPrimary: event.isPrimary,
+                        x: event.clientX,
+                        y: event.clientY,
+                    });
+                }
+            };
+
+            for (const type of ['pointerdown', 'pointermove', 'pointerup', 'pointercancel']) {
+                window.addEventListener(type, onTouchPointer, { capture: true });
+            }
+        })();
 
         function hideSplashScreen() {
             const splashScreen = document.getElementById('splash-screen');
@@ -204,8 +355,8 @@
 </head>
 
 <body>
-    <!-- Splash Screen with inline mobile-first styling to prevent any flash -->
-    <div id="splash-screen" style="
+<!-- Splash Screen with inline mobile-first styling to prevent any flash -->
+<div id="splash-screen" style="
     position: fixed;
     top: 0;
     left: 0;
@@ -224,30 +375,30 @@
     transition: opacity 0.5s ease-in-out;
     overflow: hidden;
 ">
-        <div class="loading-container">
-            <img alt="CoStar Travel Logo" id="splash-logo" src="assets/assets/images/splash_logo.svg" />
-            <div class="loading-bar-container">
-                <div class="loading-bar"></div>
-            </div>
+    <div class="loading-container">
+        <img alt="CoStar Travel Logo" id="splash-logo" src="assets/assets/images/splash_logo.svg"/>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
     </div>
+</div>
 
-    <!-- The vad: 0.0.8 pub package does NOT ship web JS assets — Travel
-         bundles them locally under `assets/vad/` (declared in pubspec.yaml).
-         Flutter serves app-declared assets at `assets/<path>`, so the
-         correct URLs are `assets/assets/vad/...`, NOT
-         `assets/packages/vad/assets/...` (that pub-package path only works
-         when the package itself declares its own assets — which vad 0.0.8
-         does not).
-         Without these three globals (`ort`, `vad`, `vadweb`) loaded, the
-         Dart vad package fails with "type 'Null' is not a subtype of type
-         'JSObject'" at silero_v5_model.dart:46 because `ort.env` is null.
-         Keep `defer` and put flutter_bootstrap last so all four scripts run
-         in document order — guarantees `ort` exists before Dart touches it. -->
-    <script defer src="assets/assets/vad/ort.js"></script>
-    <script defer src="assets/assets/vad/bundle.min.js"></script>
-    <script defer src="assets/assets/vad/vad_web.js"></script>
-    <script defer src="flutter_bootstrap.js?v=18"></script>
+<!-- The vad: 0.0.8 pub package does NOT ship web JS assets — Travel
+     bundles them locally under `assets/vad/` (declared in pubspec.yaml).
+     Flutter serves app-declared assets at `assets/<path>`, so the
+     correct URLs are `assets/assets/vad/...`, NOT
+     `assets/packages/vad/assets/...` (that pub-package path only works
+     when the package itself declares its own assets — which vad 0.0.8
+     does not).
+     Without these three globals (`ort`, `vad`, `vadweb`) loaded, the
+     Dart vad package fails with "type 'Null' is not a subtype of type
+     'JSObject'" at silero_v5_model.dart:46 because `ort.env` is null.
+     Keep `defer` and put flutter_bootstrap last so all four scripts run
+     in document order — guarantees `ort` exists before Dart touches it. -->
+<script defer src="assets/assets/vad/ort.js"></script>
+<script defer src="assets/assets/vad/bundle.min.js"></script>
+<script defer src="assets/assets/vad/vad_web.js"></script>
+<script defer src="flutter_bootstrap.js?v=113"></script>
 </body>
 
 </html>
