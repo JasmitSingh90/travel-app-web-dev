@@ -3,14 +3,14 @@
 
 <head>
     <base href="/travel-app-web-dev/">
+    <!-- <base href="/travel-app-web-dev/"> -->
 
     <meta charset="UTF-8">
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
     <meta content="CoStar Travel" name="description">
 
-    <!-- iOS meta tags & icons -->
-    <meta content="719221376180-do7vc0l2s5so64anp2sop3o7gb80drtk.apps.googleusercontent.com"
-          name="google-signin-client_id">
+    <meta content="173702795602-9f1m0hd81bu18ai40katllskihaimlve.apps.googleusercontent.com"
+        name="google-signin-client_id">
 
     <!-- iOS meta tags & icons -->
     <meta content="yes" name="apple-mobile-web-app-capable">
@@ -24,13 +24,11 @@
     <meta content="transparent" name="theme-color">
 
     <!-- Favicon -->
-    <link href="favicon.png" rel="icon" type="image/png"/>
+    <link href="favicon.png" rel="icon" type="image/png" />
 
     <!-- Preload splash images with mobile priority -->
-    <link as="image" href="assets/assets/images/login_landing_bg.png" media="(max-width: 768px)"
-          rel="preload">
-    <link as="image" href="assets/assets/images/login_web.webp" media="(min-width: 769px)"
-          rel="preload">
+    <link as="image" href="assets/assets/images/login_landing_bg.png" media="(max-width: 768px)" rel="preload">
+    <link as="image" href="assets/assets/images/login_web.webp" media="(min-width: 769px)" rel="preload">
 
     <title>CO* Travel</title>
     <link href="manifest.json" rel="manifest">
@@ -355,8 +353,8 @@
 </head>
 
 <body>
-<!-- Splash Screen with inline mobile-first styling to prevent any flash -->
-<div id="splash-screen" style="
+    <!-- Splash Screen with inline mobile-first styling to prevent any flash -->
+    <div id="splash-screen" style="
     position: fixed;
     top: 0;
     left: 0;
@@ -375,30 +373,30 @@
     transition: opacity 0.5s ease-in-out;
     overflow: hidden;
 ">
-    <div class="loading-container">
-        <img alt="CoStar Travel Logo" id="splash-logo" src="assets/assets/images/splash_logo.svg"/>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
+        <div class="loading-container">
+            <img alt="CoStar Travel Logo" id="splash-logo" src="assets/assets/images/splash_logo.svg" />
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- The vad: 0.0.8 pub package does NOT ship web JS assets — Travel
-     bundles them locally under `assets/vad/` (declared in pubspec.yaml).
-     Flutter serves app-declared assets at `assets/<path>`, so the
-     correct URLs are `assets/assets/vad/...`, NOT
-     `assets/packages/vad/assets/...` (that pub-package path only works
-     when the package itself declares its own assets — which vad 0.0.8
-     does not).
-     Without these three globals (`ort`, `vad`, `vadweb`) loaded, the
-     Dart vad package fails with "type 'Null' is not a subtype of type
-     'JSObject'" at silero_v5_model.dart:46 because `ort.env` is null.
-     Keep `defer` and put flutter_bootstrap last so all four scripts run
-     in document order — guarantees `ort` exists before Dart touches it. -->
-<script defer src="assets/assets/vad/ort.js"></script>
-<script defer src="assets/assets/vad/bundle.min.js"></script>
-<script defer src="assets/assets/vad/vad_web.js"></script>
-<script defer src="flutter_bootstrap.js?v=113"></script>
+    <!-- The vad: 0.0.8 pub package does NOT ship web JS assets — Travel
+         bundles them locally under `assets/vad/` (declared in pubspec.yaml).
+         Flutter serves app-declared assets at `assets/<path>`, so the
+         correct URLs are `assets/assets/vad/...`, NOT
+         `assets/packages/vad/assets/...` (that pub-package path only works
+         when the package itself declares its own assets — which vad 0.0.8
+         does not).
+         Without these three globals (`ort`, `vad`, `vadweb`) loaded, the
+         Dart vad package fails with "type 'Null' is not a subtype of type
+         'JSObject'" at silero_v5_model.dart:46 because `ort.env` is null.
+         Keep `defer` and put flutter_bootstrap last so all four scripts run
+         in document order — guarantees `ort` exists before Dart touches it. -->
+    <script defer src="assets/assets/vad/ort.js"></script>
+    <script defer src="assets/assets/vad/bundle.min.js"></script>
+    <script defer src="assets/assets/vad/vad_web.js"></script>
+    <script defer src="flutter_bootstrap.js?v=18"></script>
 </body>
 
 </html>
